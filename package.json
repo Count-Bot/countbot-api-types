@@ -1,0 +1,36 @@
+{
+	"name": "countbot-api-types",
+	"version": "1.0.0",
+	"description": "API types for CountBot",
+	"exports": {
+		"./v1": "./v1/index.js"
+	},
+	"type": "module",
+	"author": {
+		"name": "CountBot",
+		"email": "realcountbot@gmail.com",
+		"url": "https://count.bot"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Count-Bot/countbot-api-types/issues"
+	},
+	"homepage": "https://github.com/Count-Bot/countbot-api-types#readme",
+	"devDependencies": {
+		"@types/node": "^20.11.25",
+		"@typescript-eslint/eslint-plugin": "^7.1.1",
+		"@typescript-eslint/parser": "^7.1.1",
+		"eslint": "^8.57.0",
+		"typescript": "^5.4.2"
+	},
+	"scripts": {
+		"build": "tsc",
+		"lint": "eslint --cache --fix",
+		"check": "npm run lint && tsc --noEmit",
+		"prepare": "npm run build",
+		"preinstall": "npm run build"
+	},
+	"dependencies": {
+		"ajv": "^8.12.0"
+	}
+}
