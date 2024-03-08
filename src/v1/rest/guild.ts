@@ -1,6 +1,5 @@
-import { APIGuild } from '../../payloads/v1/guild.js';
-import { BaseAuthRouteOptions } from '../../utils/base.js';
-import { LanguageCode } from '../../utils/languages.js';
+import { APIGuild } from '../payloads/guild.js';
+import { BaseAuthRouteOptions, LanguageCode } from '../utils/index.js';
 
 export interface RESTGetAPIGuildOptions extends BaseAuthRouteOptions<APIGuild> {
 	Params: { guildId: string; };

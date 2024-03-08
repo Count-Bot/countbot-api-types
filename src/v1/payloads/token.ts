@@ -1,4 +1,4 @@
-import { RoutePermission } from '../../utils/token.js';
+import { RoutePermission } from '../utils/token.js';
 
 export interface APIToken {
 	token: string;

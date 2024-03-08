@@ -1,6 +1,6 @@
 import { JSONSchemaType } from 'ajv';
-import { APIToken } from '../../payloads/v1/token.js';
-import { BaseAuthRouteOptions } from '../../utils/base.js';
+import { APIToken } from '../payloads/token.js';
+import { BaseAuthRouteOptions } from '../utils/base.js';
 
 export interface RESTGetAPITokenOptions extends BaseAuthRouteOptions<APIToken> {
 	Params: { tokenId: string; };

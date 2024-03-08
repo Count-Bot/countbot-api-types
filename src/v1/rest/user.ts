@@ -1,8 +1,8 @@
 import { JSONSchemaType } from 'ajv';
 
-import { APIUser } from '../../payloads/v1/user.js';
-import { BaseAuthRouteOptions } from '../../utils/base.js';
-import { APIUserModifiers } from '../../payloads/v1/userModifiers.js';
+import { APIUser } from '../payloads/user.js';
+import { BaseAuthRouteOptions } from '../utils/base.js';
+import { APIUserModifiers } from '../payloads/userModifiers.js';
 
 export interface RESTGetAPIUserOptions extends BaseAuthRouteOptions<APIUser> {
 	Params: { userId: string; };

@@ -1,6 +1,6 @@
-import { APIChannel } from '../../payloads/v1/channel.js';
-import { APIChannelModifiers } from '../../payloads/v1/channelModifiers.js';
-import { BaseAuthRouteOptions } from '../../utils/base.js';
+import { APIChannel } from '../payloads/channel.js';
+import { APIChannelModifiers } from '../payloads/channelModifiers.js';
+import { BaseAuthRouteOptions } from '../utils/base.js';
 
 export interface RESTGetAPIChannelOptions extends BaseAuthRouteOptions<APIChannel> {
 	Params: { channelId: string; };

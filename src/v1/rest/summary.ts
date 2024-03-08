@@ -1,5 +1,5 @@
-import { APISummary } from '../../payloads/v1/summary.js';
-import { BaseAuthRouteOptions } from '../../utils/base.js';
+import { APISummary } from '../payloads/summary.js';
+import { BaseAuthRouteOptions } from '../utils/base.js';
 
 export interface RESTGetAPISummaryOptions extends BaseAuthRouteOptions<APISummary> {
 	Params: { summaryId: string; };
