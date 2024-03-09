@@ -7,4 +7,5 @@ export enum StatusCodePhrases {
 	InternalError = 'INTERNAL_ERROR',
 	SummaryFound = 'SUMMARY_FOUND',
 	SummaryNotFound = 'SUMMARY_NOT_FOUND',
+	InvalidObjectId = 'INVALID_OBJECT_ID',
 }
