@@ -1,8 +1,8 @@
 import { APISummary } from '../payloads/summary.js';
 import { BaseAuthRouteOptions } from '../utils/base.js';
 
-export type RESTGetAPISummariesOptions = BaseAuthRouteOptions<APISummary | null>;
-export interface RESTGetAPISummaryOptions extends BaseAuthRouteOptions<APISummary[] | null> {
+export type RESTGetAPISummariesOptions = BaseAuthRouteOptions<APISummary[] | null>;
+export interface RESTGetAPISummaryOptions extends BaseAuthRouteOptions<APISummary | null> {
 	Params: { summaryId: string; };
 }
 
