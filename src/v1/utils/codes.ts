@@ -5,4 +5,6 @@ export enum StatusCodePhrases {
 	MethodNotAllowed = 'METHOD_NOT_ALLOWED',
 	Forbidden = 'FORBIDDEN',
 	InternalError = 'INTERNAL_ERROR',
+	SummaryFound = 'SUMMARY_FOUND',
+	SummaryNotFound = 'SUMMARY_NOT_FOUND',
 }
