@@ -1,9 +1,8 @@
 export enum StatusCodePhrases {
-	GuildFound = 'GUILD_FOUND',
-	GuildNotFound = 'GUILD_NOT_FOUND',
-	UserFound = 'USER_FOUND',
-	UserNotFound = 'USER_NOT_FOUND',
+	GuildAsserted = 'GUILD_ASSERTED',
+	UserAsserted = 'USER_ASSERTED',
 	RouteNotFound = 'ROUTE_NOT_FOUND',
 	MethodNotAllowed = 'METHOD_NOT_ALLOWED',
 	Forbidden = 'FORBIDDEN',
+	InternalError = 'INTERNAL_ERROR',
 }
