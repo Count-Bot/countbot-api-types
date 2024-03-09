@@ -17,6 +17,6 @@ export interface RESTPatchAPIGuildOptions extends BaseAuthRouteOptions<APIGuild>
 export interface RESTPostAPIGuildOptions extends BaseAuthRouteOptions<APIGuild> {
 	Params: { guildId: string; };
 	Body: {
-		name: string;
+		guildId: string;
 	};
 };
