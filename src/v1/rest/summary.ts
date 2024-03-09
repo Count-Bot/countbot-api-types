@@ -3,7 +3,7 @@ import { BaseAuthRouteOptions } from '../utils/base.js';
 
 export interface RESTGetAPISummaryOptions extends BaseAuthRouteOptions<APISummary> {
 	Params: { summaryId: string; };
-};
+}
 
 export interface RESTPatchAPISummaryOptions extends BaseAuthRouteOptions<APISummary> {
 	Params: { summaryId: string; };
@@ -16,4 +16,4 @@ export interface RESTPatchAPISummaryOptions extends BaseAuthRouteOptions<APISumm
 		users?: boolean | undefined;
 		votes?: boolean | undefined;
 	};
-};
+}

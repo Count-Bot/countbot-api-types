@@ -8,19 +8,10 @@ export interface APIUser {
 	inventory: number[];
 	achievements: ({
 		achievedAt: number;
-		name: Achievement;
+		name: UserAchievement;
 	})[];
 	hasVoted: boolean;
 	boosting: boolean;
 }
 
-export enum Achievement {
-	CounterAmature = "COUNTER_AMATURE",
-	CounterExperienced = "COUNTER_EXPERIENCED",
-	Counter_Legendary = "COUNTER_LEGENDARY",
-	ItemScavenger = "ITEM_SCAVENGER",
-	ItemSeeker = "ITEM_SEEKER",
-	ItemHunter = "ITEM_HUNTER",
-	CountBotHero = "COUNTBOT_HERO",
-	WorstCounter = "WORST_COUNTER"
-}
+export type UserAchievement = 'COUNTER_AMATURE' | 'COUNTER_EXPERIENCED' | 'COUNTER_LEGENDARY' | 'ITEM_SCAVENGER' | 'ITEM_SEEKER' | 'ITEM_HUNTER' | 'COUNTBOT_HERO' | 'WORST_COUNTER';

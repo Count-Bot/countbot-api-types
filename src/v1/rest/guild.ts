@@ -3,7 +3,7 @@ import { BaseAuthRouteOptions, LanguageCode } from '../utils/index.js';
 
 export interface RESTGetAPIGuildOptions extends BaseAuthRouteOptions<APIGuild> {
 	Params: { guildId: string; };
-};
+}
 
 export interface RESTPatchAPIGuildOptions extends BaseAuthRouteOptions<APIGuild> {
 	Params: { guildId: string; };
@@ -12,11 +12,11 @@ export interface RESTPatchAPIGuildOptions extends BaseAuthRouteOptions<APIGuild>
 		language?: LanguageCode | undefined;
 		premiumEndTimestamp?: number | undefined;
 	};
-};
+}
 
-export interface RESTPostAPIGuildOptions extends BaseAuthRouteOptions<APIGuild> {
+export interface RESTPostAPIGuildOptions extends BaseAuthRouteOptions<APIGuild | null> {
 	Params: { guildId: string; };
 	Body: {
 		guildId: string;
 	};
-};
+}

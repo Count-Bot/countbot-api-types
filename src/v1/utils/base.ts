@@ -1,4 +1,4 @@
-import { StatusCodePhrases } from './http_phrases.js';
+import { StatusCodePhrases } from './codes.js';
 
 export interface BaseAuthRouteOptions<D = null> {
 	Header: {
@@ -7,6 +7,6 @@ export interface BaseAuthRouteOptions<D = null> {
 	Reply: {
 		error: boolean;
 		message: StatusCodePhrases;
-		data: D | null;
+		data: D;
 	};
 }
