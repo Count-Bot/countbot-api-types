@@ -4,11 +4,11 @@ import { BaseAuthRouteOptions } from '../utils/base.js';
 
 export interface RESTGetAPIChannelOptions extends BaseAuthRouteOptions<APIChannel> {
 	Params: { channelId: string; };
-};
+}
 
 export interface RESTDeleteAPIChannelOptions extends BaseAuthRouteOptions<APIChannel> {
 	Params: { channelId: string; };
-};
+}
 
 export interface RESTPatchAPIChannelOptions extends BaseAuthRouteOptions<APIChannel> {
 	Params: { channelId: string; };
@@ -31,7 +31,7 @@ export interface RESTPatchAPIChannelOptions extends BaseAuthRouteOptions<APIChan
 			role?: string | null | undefined;
 		} | null | undefined;
 	};
-};
+}
 
 export interface RESTPostAPIChannelCountOptions extends BaseAuthRouteOptions<APIChannel> {
 	Params: { channelId: string; };
@@ -44,4 +44,4 @@ export interface RESTPostAPIChannelCountOptions extends BaseAuthRouteOptions<API
 
 export interface RESTGetAPIChannelModifiersOptions extends BaseAuthRouteOptions<APIChannelModifiers> {
 	Params: { channelId: string; };
-};
+}

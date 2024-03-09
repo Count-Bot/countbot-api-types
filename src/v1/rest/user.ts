@@ -2,11 +2,11 @@ import { APIUser } from '../payloads/user.js';
 import { APIUserModifiers } from '../payloads/userModifiers.js';
 import { BaseAuthRouteOptions } from '../utils/base.js';
 
-export interface RESTGetAPIUserOptions extends BaseAuthRouteOptions<APIUser> {
+export interface RESTGetAPIUserOptions extends BaseAuthRouteOptions<APIUser | null> {
 	Params: { userId: string; };
 }
 
-export interface RESTPostAPIUserOptions extends BaseAuthRouteOptions<APIUser> {
+export interface RESTPostAPIUserOptions extends BaseAuthRouteOptions<APIUser | null> {
 	Body: { userId: string; };
 }
 

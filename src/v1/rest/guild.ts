@@ -1,11 +1,11 @@
 import { APIGuild } from '../payloads/guild.js';
 import { BaseAuthRouteOptions, LanguageCode } from '../utils/index.js';
 
-export interface RESTGetAPIGuildOptions extends BaseAuthRouteOptions<APIGuild> {
+export interface RESTGetAPIGuildOptions extends BaseAuthRouteOptions<APIGuild | null> {
 	Params: { guildId: string; };
 }
 
-export interface RESTPatchAPIGuildOptions extends BaseAuthRouteOptions<APIGuild> {
+export interface RESTPatchAPIGuildOptions extends BaseAuthRouteOptions<APIGuild | null> {
 	Params: { guildId: string; };
 	Body: {
 		channelId?: string | null | undefined;
