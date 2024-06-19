@@ -1,8 +1,16 @@
 import { APICountingGuild } from '../payloads/Guild.js';
 import { BaseAuthRouteOptions, LanguageCode } from '../utils/index.js';
 
+export interface RESTGetAPIGuildsOptions extends BaseAuthRouteOptions<APICountingGuild | null> {
+  Querystring: {
+    guildId: string;
+  };
+}
+
 export interface RESTGetAPIGuildOptions extends BaseAuthRouteOptions<APICountingGuild | null> {
-  Params: { guildId: string; };
+  Params: {
+    guildId: string;
+  };
 }
 
 export interface RESTPatchAPIGuildOptions extends BaseAuthRouteOptions<APICountingGuild | null> {
