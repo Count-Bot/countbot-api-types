@@ -1,21 +1,82 @@
-export interface APIChannel {
-	allowChatting: boolean;
-	allowItems: boolean;
-	channelId: string;
-	guildId: string;
-	consecutiveCounting: boolean;
-	countValidation: boolean;
-	suddenDeath: boolean;
-	count: number;
-	items: number;
-	lastCountId: string | null;
-	mode: string;
-	modifiers: string;
-	goal: {
-		active: boolean;
-		number: number;
-		lock: boolean;
-		reset: boolean;
-		role: string | null;
-	} | null;
+import { CountingMode } from '../rest/channel.js';
+import { Base } from './base.js';
+
+interface CountingGoal {
+  /**
+   * If the goal is active.
+   */
+  active: boolean;
+  /**
+   * The goal number.
+   */
+  number: number;
+  /**
+   * If the channel locks after goal is reached.
+   */
+  lock: boolean;
+  /**
+   * If the channel resets after being reached.
+   */
+  reset: boolean;
+  /**
+   * The role ID to assign to the user that reaches the goal.
+   */
+  role: string | null;
 }
+
+export interface CountingChannel extends Base {
+  /**
+   * If the channel allows regular chatting.
+   */
+  allowChatting: boolean;
+  /**
+   * If the channel allows items.
+   */
+  allowItems: boolean;
+  /**
+   * The channel's Discord ID.
+   */
+  channelId: string;
+  /**
+   * The channel's guild Discord ID.
+   */
+  guildId: string;
+  /**
+   * If consecutive counting is enabled.
+   */
+  consecutiveCounting: boolean;
+  /**
+   * If count validation (reactions) is enabled.
+   */
+  countValidation: boolean;
+  /**
+   * If sudden death is enabled.
+   */
+  suddenDeath: boolean;
+  /**
+   * The channel count.
+   */
+  count: number;
+  /**
+   * The number of items found in the channel.
+   */
+  items: number;
+  /**
+   * The last count user ID.
+   */
+  lastCountId: string | null;
+  /**
+   * The counting mode.
+   */
+  mode: CountingMode;
+  /**
+   * The channel's modifiers Object ID.
+   */
+  modifiers: string;
+  /**
+   * The channel's goal.
+   */
+  goal: CountingGoal | null;
+}
+
+export type APICountingChannel = CountingChannel & Base; 

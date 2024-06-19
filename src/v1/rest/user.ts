@@ -1,15 +1,11 @@
-import { APIUser } from '../payloads/user.js';
-import { APIUserModifiers } from '../payloads/userModifiers.js';
+import { APICountingUser } from '../payloads/user.js';
 import { BaseAuthRouteOptions } from '../utils/base.js';
 
-export interface RESTGetAPIUserOptions extends BaseAuthRouteOptions<APIUser | null> {
-	Params: { userId: string; };
+export interface RESTGetAPIUserOptions extends BaseAuthRouteOptions<APICountingUser | null> {
+  Params: { userId: string; };
 }
 
-export interface RESTPostAPIUserOptions extends BaseAuthRouteOptions<APIUser | null> {
-	Body: { userId: string; };
+export interface RESTPostAPIUserOptions extends BaseAuthRouteOptions<APICountingUser | null> {
+  Body: { userId: string; };
 }
 
-export interface RESTGetAPIUserModifiersOptions extends BaseAuthRouteOptions<APIUserModifiers> {
-	Params: { channelId: string; };
-}

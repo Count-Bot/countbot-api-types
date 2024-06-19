@@ -1,22 +1,19 @@
-import { APIGuild } from '../payloads/guild.js';
+import { APICountingGuild } from '../payloads/guild.js';
 import { BaseAuthRouteOptions, LanguageCode } from '../utils/index.js';
 
-export interface RESTGetAPIGuildOptions extends BaseAuthRouteOptions<APIGuild | null> {
-	Params: { guildId: string; };
+export interface RESTGetAPIGuildOptions extends BaseAuthRouteOptions<APICountingGuild | null> {
+  Params: { guildId: string; };
 }
 
-export interface RESTPatchAPIGuildOptions extends BaseAuthRouteOptions<APIGuild | null> {
-	Params: { guildId: string; };
-	Body: {
-		channelId?: string | null | undefined;
-		language?: LanguageCode | undefined;
-		premiumEndTimestamp?: number | undefined;
-	};
+export interface RESTPatchAPIGuildOptions extends BaseAuthRouteOptions<APICountingGuild | null> {
+  Params: { guildId: string; };
+  Body: {
+    language: LanguageCode;
+  };
 }
 
-export interface RESTPostAPIGuildOptions extends BaseAuthRouteOptions<APIGuild | null> {
-	Params: { guildId: string; };
-	Body: {
-		guildId: string;
-	};
+export interface RESTPostAPIGuildOptions extends BaseAuthRouteOptions<APICountingGuild | null> {
+  Body: {
+    guildId: string;
+  };
 }

@@ -1,12 +1,12 @@
 import { StatusCodePhrases } from './codes.js';
 
-export interface BaseAuthRouteOptions<D = null> {
-	Header: {
-		Authorization: string;
-	};
-	Reply: {
-		error: boolean;
-		message: StatusCodePhrases;
-		data: D;
-	};
+export interface BaseAuthRouteOptions<Response = null> {
+  Header: {
+    Authorization: string;
+  };
+  Reply: {
+    error: boolean;
+    message: StatusCodePhrases;
+    data: Response;
+  };
 }

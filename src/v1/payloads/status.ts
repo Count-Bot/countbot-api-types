@@ -1,5 +1,5 @@
 export interface APIStatus {
-	guilds: number;
-	users: number;
-	totalCounts: number;
+  guilds: number;
+  users: number;
+  totalCounts: number;
 }

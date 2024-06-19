@@ -1,10 +1,6 @@
-interface Modifiers<T> {
-	defaultValue: T;
-	value: T;
-	endTimestamp: number | null;
-}
+import { Modifiers } from '../utils/modifiers.js';
 
 export interface APIUserModifiers {
-	userId: string,
-	freeze: Modifiers<boolean>;
+  userId: string,
+  freeze: Modifiers<boolean>;
 }
