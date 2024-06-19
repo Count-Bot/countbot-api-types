@@ -1,4 +1,4 @@
-import { APIBase } from './base.js';
+import { APIBase } from './Base.js';
 
 export interface CountingSummary {
   /**

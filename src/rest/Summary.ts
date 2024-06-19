@@ -1,4 +1,4 @@
-import { APIDailySummary } from '../payloads/summary.js';
+import { APIDailySummary } from '../payloads/Summary.js';
 import { BaseAuthRouteOptions } from '../utils/base.js';
 
 export type RESTGetAPISummariesOptions = BaseAuthRouteOptions<APIDailySummary[] | null>;
