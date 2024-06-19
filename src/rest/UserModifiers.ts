@@ -1,4 +1,4 @@
-import { APIUserModifiers } from '../payloads/userModifiers.js';
+import { APIUserModifiers } from '../payloads/UserModifiers.js';
 import { BaseAuthRouteOptions } from '../utils/base.js';
 
 export interface RESTGetAPIUserModifiersOptions extends BaseAuthRouteOptions<APIUserModifiers> {

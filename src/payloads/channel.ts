@@ -1,5 +1,5 @@
-import { CountingMode } from '../rest/channel.js';
-import { APIBase } from './base.js';
+import { CountingMode } from '../rest/Channel.js';
+import { APIBase } from './Base.js';
 
 interface CountingGoal {
   /**

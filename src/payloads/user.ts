@@ -1,6 +1,6 @@
 import { Achievement } from '../utils/achievements.js';
 import { CBItemString } from '../utils/items.js';
-import { APIBase } from './base.js';
+import { APIBase } from './Base.js';
 
 export interface UserAchievement {
   /**

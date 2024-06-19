@@ -1,4 +1,4 @@
-import { APICountingGuild } from '../payloads/guild.js';
+import { APICountingGuild } from '../payloads/Guild.js';
 import { BaseAuthRouteOptions, LanguageCode } from '../utils/index.js';
 
 export interface RESTGetAPIGuildOptions extends BaseAuthRouteOptions<APICountingGuild | null> {

@@ -1,4 +1,4 @@
-import { APICountingChannelChannelModifiers } from '../payloads/channelModifiers.js';
+import { APICountingChannelChannelModifiers } from '../payloads/ChannelModifiers.js';
 import { BaseAuthRouteOptions } from '../utils/base.js';
 
 export interface RESTGetAPIChannelModifiersOptions extends BaseAuthRouteOptions<APICountingChannelChannelModifiers> {

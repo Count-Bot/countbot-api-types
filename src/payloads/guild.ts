@@ -1,5 +1,5 @@
 import { LanguageCode } from '../utils/languages.js';
-import { APIBase } from './base.js';
+import { APIBase } from './Base.js';
 
 export interface CountingGuild {
   /**

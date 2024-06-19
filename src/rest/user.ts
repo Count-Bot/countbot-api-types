@@ -1,4 +1,4 @@
-import { APICountingUser } from '../payloads/user.js';
+import { APICountingUser } from '../payloads/User.js';
 import { BaseAuthRouteOptions } from '../utils/base.js';
 
 export interface RESTGetAPIUserOptions extends BaseAuthRouteOptions<APICountingUser | null> {
