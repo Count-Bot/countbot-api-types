@@ -1,5 +1,6 @@
 export enum StatusCodePhrases {
   Ok = 'Ok',
+  BadRequest = 'BadRequest',
   NotFound = 'NotFound',
   GuildFound = 'GuildFound',
   GuildNotFound = 'GuildNotFound',
