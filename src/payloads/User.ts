@@ -46,7 +46,7 @@ export interface CountingUser {
   /**
    * The achievements of the user
    */
-  achievements: UserAchievement[];
+  achievements: Types.DocumentArray<UserAchievement>;
   /**
    * The timestamp when the user last voted
    */
