@@ -1,3 +1,4 @@
+import { Types } from 'mongoose';
 import { LanguageCode } from '../utils/languages.js';
 import { APIBase } from './Base.js';
 
@@ -5,7 +6,7 @@ export interface CountingGuild {
   /**
    * The counting channel of the guild
    */
-  channel: string | null;
+  channel: Types.ObjectId | null;
   /**
    * The Discord Snowflake ID of the guild
    */

@@ -1,3 +1,4 @@
+import { Types } from 'mongoose';
 import { CountingMode } from '../rest/Channel.js';
 import { APIBase } from './Base.js';
 
@@ -72,7 +73,7 @@ export interface CountingChannel extends APIBase {
   /**
    * The channel's modifiers Object ID.
    */
-  modifiers: string;
+  modifiers: Types.ObjectId;
   /**
    * The channel's goal.
    */

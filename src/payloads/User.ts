@@ -1,3 +1,4 @@
+import { Types } from 'mongoose';
 import { Achievement } from '../utils/achievements.js';
 import { CBItemString } from '../utils/items.js';
 import { APIBase } from './Base.js';
@@ -21,7 +22,7 @@ export interface CountingUser {
   /**
    * The modifiers of the user
    */
-  modifiers: string;
+  modifiers: Types.ObjectId;
   /**
    * The amount of coins the user has
    */
