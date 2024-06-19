@@ -2,7 +2,7 @@ import { Types } from 'mongoose';
 import { CountingMode } from '../rest/Channel.js';
 import { APIBase } from './Base.js';
 
-interface CountingGoal {
+export interface CountingGoal {
   /**
    * If the goal is active.
    */
