@@ -9,12 +9,14 @@ export interface RESTGetAPIGuildsOptions extends BaseAuthRouteOptions<APICountin
 
 export interface RESTGetAPIGuildOptions extends BaseAuthRouteOptions<APICountingGuild | null> {
   Params: {
-    id: string;
+    guildId: string;
   };
 }
 
 export interface RESTPatchAPIGuildOptions extends BaseAuthRouteOptions<APICountingGuild | null> {
-  Params: { id: string; };
+  Params: {
+    guildId: string;
+  };
   Body: {
     language: LanguageCode;
   };

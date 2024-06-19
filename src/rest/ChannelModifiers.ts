@@ -2,5 +2,7 @@ import { APICountingChannelChannelModifiers } from '../payloads/ChannelModifiers
 import { BaseAuthRouteOptions } from '../utils/base.js';
 
 export interface RESTGetAPIChannelModifiersOptions extends BaseAuthRouteOptions<APICountingChannelChannelModifiers> {
-  Params: { channelId: string; };
+  Params: {
+    channelId: string;
+  };
 }
