@@ -1,6 +1,6 @@
-import { APIUserModifiers } from '../payloads/UserModifiers.js';
+import { APICountingUserModifiers } from '../payloads/UserModifiers.js';
 import { BaseAuthRouteOptions } from '../utils/base.js';
 
-export interface RESTGetAPIUserModifiersOptions extends BaseAuthRouteOptions<APIUserModifiers> {
+export interface RESTGetAPIUserModifiersOptions extends BaseAuthRouteOptions<APICountingUserModifiers> {
   Params: { userId: string; };
 }
