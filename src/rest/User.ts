@@ -9,7 +9,7 @@ export interface RESTGetAPIUsersOptions extends BaseAuthRouteOptions<APICounting
 
 export interface RESTGetAPIUserOptions extends BaseAuthRouteOptions<APICountingUser | null> {
   Params: {
-    userId: string;
+    id: string;
   };
 }
 
