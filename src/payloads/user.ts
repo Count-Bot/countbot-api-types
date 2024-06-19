@@ -1,6 +1,6 @@
 import { Achievement } from '../utils/achievements.js';
 import { CBItemString } from '../utils/items.js';
-import { Base } from './base.js';
+import { APIBase } from './base.js';
 
 export interface UserAchievement {
   /**
@@ -72,4 +72,4 @@ export interface CountingUser {
   lifetime: boolean;
 }
 
-export type APICountingUser = CountingUser & Base;
+export type APICountingUser = CountingUser & APIBase;

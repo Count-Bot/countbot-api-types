@@ -1,5 +1,5 @@
 import { Modifiers } from '../utils/modifiers.js';
-import { Base } from './base.js';
+import { APIBase } from './base.js';
 
 export interface CountingChannelChannelModifiers {
   /**
@@ -24,4 +24,4 @@ export interface CountingChannelChannelModifiers {
   xp: Modifiers<number>;
 }
 
-export type APICountingChannelChannelModifiers = CountingChannelChannelModifiers & Base;
+export type APICountingChannelChannelModifiers = CountingChannelChannelModifiers & APIBase;

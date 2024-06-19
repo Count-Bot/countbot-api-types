@@ -1,5 +1,5 @@
 import { LanguageCode } from '../utils/languages.js';
-import { Base } from './base.js';
+import { APIBase } from './base.js';
 
 export interface CountingGuild {
   /**
@@ -24,4 +24,4 @@ export interface CountingGuild {
   lifetime: boolean;
 }
 
-export type APICountingGuild = CountingGuild & Base;
+export type APICountingGuild = CountingGuild & APIBase;

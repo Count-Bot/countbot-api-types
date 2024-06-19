@@ -1,4 +1,4 @@
-import { Base } from './base.js';
+import { APIBase } from './base.js';
 
 export interface CountingSummary {
   /**
@@ -31,4 +31,4 @@ export interface CountingSummary {
   endOfDayTimestamp: number;
 }
 
-export type APIDailySummary = CountingSummary & Base;
+export type APIDailySummary = CountingSummary & APIBase;

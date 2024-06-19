@@ -1,5 +1,5 @@
 import { CountingMode } from '../rest/channel.js';
-import { Base } from './base.js';
+import { APIBase } from './base.js';
 
 interface CountingGoal {
   /**
@@ -24,7 +24,7 @@ interface CountingGoal {
   role: string | null;
 }
 
-export interface CountingChannel extends Base {
+export interface CountingChannel extends APIBase {
   /**
    * If the channel allows regular chatting.
    */
@@ -79,4 +79,4 @@ export interface CountingChannel extends Base {
   goal: CountingGoal | null;
 }
 
-export type APICountingChannel = CountingChannel & Base; 
+export type APICountingChannel = CountingChannel & APIBase; 

@@ -1,3 +1,5 @@
-export interface Base {
-  _id: string;
+import { Types } from 'mongoose';
+
+export interface APIBase {
+  _id: Types.ObjectId;
 }
