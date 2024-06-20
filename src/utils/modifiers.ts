@@ -1,6 +1,6 @@
 export type ModifierValues<T> = [value: T, timeLeft: number];
 
-export interface IModifiers<T> extends IModifiersMethods<T> {
+export interface Modifiers<T> extends IModifiersMethods<T> {
   /**
    * The default value of the modifier
    */
