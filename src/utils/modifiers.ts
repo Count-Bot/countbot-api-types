@@ -1,6 +1,6 @@
 export type ModifierValues<T> = [value: T, timeLeft: number];
 
-export interface Modifiers<T> extends IModifiersMethods<T> {
+export interface Modifiers<T> extends ModifiersMethods<T> {
   /**
    * The default value of the modifier
    */
@@ -15,7 +15,7 @@ export interface Modifiers<T> extends IModifiersMethods<T> {
   endTimestamp: number | null;
 }
 
-export interface IModifiersMethods<T> {
+export interface ModifiersMethods<T> {
   /**
    * Set the value and duration of the modifier
    * @param value The value to set
