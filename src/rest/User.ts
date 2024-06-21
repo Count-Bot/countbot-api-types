@@ -1,6 +1,6 @@
 import { Types } from 'mongoose';
 
-import { APICountingUser } from '../payloads/user.js';
+import { APICountingUser } from '../payloads/User.js';
 import { BaseAuthRouteOptions } from '../utils/base.js';
 
 export interface RESTGetAPIUsersOptions extends BaseAuthRouteOptions<APICountingUser<Types.ObjectId> | null> {

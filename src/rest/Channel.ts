@@ -1,6 +1,6 @@
 import { Types } from 'mongoose';
 
-import { APICountingChannel } from '../payloads/channel.js';
+import { APICountingChannel } from '../payloads/Channel.js';
 import { BaseAuthRouteOptions } from '../utils/base.js';
 
 export const CountingModes = ['DEFAULT', 'EVEN', 'ODD', 'THREE', 'FOUR', 'FIVE', 'SIX', 'SEVEN', 'EIGHT', 'NINE', 'TEN', 'PRIME'] as const;

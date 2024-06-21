@@ -1,6 +1,6 @@
 import { Types } from 'mongoose';
 
-import { APICountingChannelModifiers } from '../payloads/channelModifiers.js';
+import { APICountingChannelModifiers } from '../payloads/ChannelModifiers.js';
 import { BaseAuthRouteOptions } from '../utils/base.js';
 
 export interface RESTGetAPIChannelModifiersOptions extends BaseAuthRouteOptions<APICountingChannelModifiers<Types.ObjectId>> {
