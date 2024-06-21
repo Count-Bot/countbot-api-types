@@ -1,7 +1,7 @@
 import { Types } from 'mongoose';
+
 import { Achievement } from '../utils/achievements.js';
 import { CBItemString } from '../utils/items.js';
-import { APIBase } from './Base.js';
 
 export interface UserAchievement {
   /**
@@ -14,7 +14,11 @@ export interface UserAchievement {
   name: Achievement;
 }
 
-export interface CountingUser {
+export interface APICountingUser<ID extends string | Types.ObjectId> {
+  /**
+   * The ObjectID of the user
+   */
+  _id: ID;
   /**
    * The Discord Snowflake ID of the user
    */
@@ -72,5 +76,3 @@ export interface CountingUser {
    */
   lifetime: boolean;
 }
-
-export type APICountingUser = CountingUser & APIBase;

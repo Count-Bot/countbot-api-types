@@ -1,6 +1,7 @@
-import { APIBase } from './Base.js';
+import { Types } from 'mongoose';
 
-export interface CountingSummary {
+export interface APICountingSummary<ID extends string | Types.ObjectId> {
+  _id: ID;
   /**
    * If the summary is the current one
    */
@@ -30,5 +31,3 @@ export interface CountingSummary {
    */
   endOfDayTimestamp: number;
 }
-
-export type APIDailySummary = CountingSummary & APIBase;

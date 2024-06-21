@@ -1,7 +1,12 @@
-import { Modifiers } from '../utils/modifiers.js';
-import { APIBase } from './Base.js';
+import { Types } from 'mongoose';
 
-export interface CountingChannelChannelModifiers {
+import { Modifiers } from '../utils/modifiers.js';
+
+export interface APICountingChannelModifiers<ID extends string | Types.ObjectId> {
+  /**
+   * The ObjectID of the channel modifiers
+   */
+  _id: ID;
   /**
    * The ID of the channel these modifiers are for.
    */
@@ -23,5 +28,3 @@ export interface CountingChannelChannelModifiers {
    */
   xp: Modifiers<number>;
 }
-
-export type APICountingChannelChannelModifiers = CountingChannelChannelModifiers & APIBase;

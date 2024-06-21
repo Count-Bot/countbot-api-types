@@ -1,5 +1,6 @@
-import { StatusCodePhrases } from './codes.js';
 import { RequestGenericInterface } from 'fastify';
+
+import { StatusCodePhrases } from './codes.js';
 
 export interface BaseAuthRouteOptions<Response = null> extends RequestGenericInterface {
   Header: {

@@ -1,8 +1,12 @@
 import { Types } from 'mongoose';
-import { LanguageCode } from '../utils/languages.js';
-import { APIBase } from './Base.js';
 
-export interface CountingGuild {
+import { LanguageCode } from '../utils/languages.js';
+
+export interface APICountingGuild<ID extends string | Types.ObjectId> {
+  /**
+   * The ObjectID of the guild
+   */
+  _id: ID;
   /**
    * The counting channel of the guild
    */
@@ -24,5 +28,3 @@ export interface CountingGuild {
    */
   lifetime: boolean;
 }
-
-export type APICountingGuild = CountingGuild & APIBase;

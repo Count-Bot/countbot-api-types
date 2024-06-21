@@ -1,9 +1,18 @@
-import { Modifiers } from '../utils/modifiers.js';
-import { APIBase } from './Base.js';
+import { Types } from 'mongoose';
 
-export interface CountingUserModifiers {
+import { Modifiers } from '../utils/modifiers.js';
+
+export interface APICountingUserModifiers<ID extends string | Types.ObjectId> {
+  /**
+   * The ObjectID of the user modifiers
+   */
+  _id: ID;
+  /**
+   * The ID of the user these modifiers are for.
+   */
   userId: string,
+  /**
+   * The freeze modifier
+   */
   freeze: Modifiers<boolean>;
 }
-
-export type APICountingUserModifiers = CountingUserModifiers & APIBase;

@@ -1,6 +1,6 @@
 import { Types } from 'mongoose';
-import { CountingMode } from '../rest/Channel.js';
-import { APIBase } from './Base.js';
+
+import { CountingMode } from '../rest/channel.js';
 
 export interface CountingGoal {
   /**
@@ -25,7 +25,11 @@ export interface CountingGoal {
   role: string | null;
 }
 
-export interface CountingChannel extends APIBase {
+export interface APICountingChannel<ID extends string | Types.ObjectId> {
+  /**
+   * The Object ID of the channel.
+   */
+  _id: ID;
   /**
    * If the channel allows regular chatting.
    */
@@ -79,5 +83,3 @@ export interface CountingChannel extends APIBase {
    */
   goal: CountingGoal | null;
 }
-
-export type APICountingChannel = CountingChannel & APIBase; 
