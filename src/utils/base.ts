@@ -1,8 +1,6 @@
-import { RequestGenericInterface } from 'fastify';
-
 import { StatusCodePhrases } from './codes.js';
 
-export interface BaseAuthRouteOptions<Response = null> extends RequestGenericInterface {
+export interface BaseAuthRouteOptions<Response = null> {
   Header: {
     Authorization: string;
   };
