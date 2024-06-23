@@ -3,19 +3,19 @@ import { Types } from 'mongoose';
 import { APICountingGuild } from '../payloads/Guild.js';
 import { BaseAuthRouteOptions, LanguageCode } from '../utils/index.js';
 
-export interface RESTGetAPIGuildsOptions extends BaseAuthRouteOptions<APICountingGuild<Types.ObjectId> | null> {
+export interface RESTGetAPIGuilds extends BaseAuthRouteOptions<APICountingGuild<Types.ObjectId> | null> {
   Querystring: {
     guildId: string;
   };
 }
 
-export interface RESTGetAPIGuildOptions extends BaseAuthRouteOptions<APICountingGuild<Types.ObjectId> | null> {
+export interface RESTGetAPIGuild extends BaseAuthRouteOptions<APICountingGuild<Types.ObjectId> | null> {
   Params: {
     guildId: string;
   };
 }
 
-export interface RESTPatchAPIGuildOptions extends BaseAuthRouteOptions<APICountingGuild<Types.ObjectId> | null> {
+export interface RESTPatchAPIGuild extends BaseAuthRouteOptions<APICountingGuild<Types.ObjectId> | null> {
   Params: {
     guildId: string;
   };
@@ -24,7 +24,7 @@ export interface RESTPatchAPIGuildOptions extends BaseAuthRouteOptions<APICounti
   };
 }
 
-export interface RESTPostAPIGuildOptions extends BaseAuthRouteOptions<APICountingGuild<Types.ObjectId> | null> {
+export interface RESTPostAPIGuild extends BaseAuthRouteOptions<APICountingGuild<Types.ObjectId> | null> {
   Body: {
     guildId: string;
   };

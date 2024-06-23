@@ -7,19 +7,19 @@ export const CountingModes = ['DEFAULT', 'EVEN', 'ODD', 'THREE', 'FOUR', 'FIVE',
 
 export type CountingMode = typeof CountingModes[number];
 
-export interface RESTGetAPIChannelsOptions extends BaseAuthRouteOptions<APICountingChannel<Types.ObjectId>> {
+export interface RESTGetAPICountingChannels extends BaseAuthRouteOptions<APICountingChannel<Types.ObjectId>> {
   Querystring: {
     channelId: string;
   };
 }
 
-export interface RESTGetAPIChannelOptions extends BaseAuthRouteOptions<APICountingChannel<Types.ObjectId>> {
+export interface RESTGetAPICountingChannel extends BaseAuthRouteOptions<APICountingChannel<Types.ObjectId>> {
   Params: {
     channelId: string;
   };
 }
 
-export interface RESTPatchAPIChannelOptions extends BaseAuthRouteOptions<APICountingChannel<Types.ObjectId>> {
+export interface RESTPatchAPICountingChannel extends BaseAuthRouteOptions<APICountingChannel<Types.ObjectId>> {
   Params: {
     channelId: string;
   };
