@@ -4,19 +4,24 @@
   "description": "API types for CountBot",
   "exports": {
     "./payloads": {
-      "types": "./build/payloads/index.d.ts",
-      "require": "./build/payloads/index.js",
-      "import": "./build/payloads/index.mjs"
+      "types": "./payloads/index.d.ts",
+      "require": "./payloads/index.js",
+      "import": "./payloads/index.mjs"
     },
     "./rest": {
-      "types": "./build/rest/index.d.ts",
-      "require": "./build/rest/index.js",
-      "import": "./build/rest/index.mjs"
+      "types": "./rest/index.d.ts",
+      "require": "./rest/index.js",
+      "import": "./rest/index.mjs"
     },
     "./utils": {
-      "types": "./build/utils/index.d.ts",
-      "require": "./build/utils/index.js",
-      "import": "./build/utils/index.mjs"
+      "types": "./utils/index.d.ts",
+      "require": "./utils/index.js",
+      "import": "./utils/index.mjs"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "require": "./index.js",
+      "import": "./index.mjs"
     }
   },
   "author": {
