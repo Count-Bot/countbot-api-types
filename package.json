@@ -7,7 +7,6 @@
     "./rest": "./build/rest/index.js",
     "./utils": "./build/utils/index.js"
   },
-  "type": "module",
   "author": {
     "name": "CountBot",
     "email": "realcountbot@gmail.com",
