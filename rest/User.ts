@@ -5,7 +5,7 @@ import { BaseAuthRouteOptions } from '../utils/base.js';
 
 export interface RESTGetAPIUsers extends BaseAuthRouteOptions<APICountingUser<Types.ObjectId> | null> {
   Querystring: {
-    userId: string;
+    userId?: string;
   };
 }
 

@@ -5,7 +5,7 @@ import { BaseAuthRouteOptions, LanguageCode } from '../utils/index.js';
 
 export interface RESTGetAPIGuilds extends BaseAuthRouteOptions<APICountingGuild<Types.ObjectId> | null> {
   Querystring: {
-    guildId: string;
+    guildId?: string;
   };
 }
 
@@ -20,7 +20,7 @@ export interface RESTPatchAPIGuild extends BaseAuthRouteOptions<APICountingGuild
     guildId: string;
   };
   Body: {
-    language: LanguageCode;
+    language?: LanguageCode;
   };
 }
 
