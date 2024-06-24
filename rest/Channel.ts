@@ -9,7 +9,7 @@ export type CountingMode = typeof CountingModes[number];
 
 export interface RESTGetAPICountingChannels extends BaseAuthRouteOptions<APICountingChannel<Types.ObjectId> | null> {
   Querystring: {
-    channelId: string;
+    channelId?: string;
   };
 }
 
@@ -24,12 +24,13 @@ export interface RESTPatchAPICountingChannel extends BaseAuthRouteOptions<APICou
     channelId: string;
   };
   Body: {
-    allowChatting: boolean;
-    allowItems: boolean;
-    consecutiveCounting: boolean;
-    countValidation: boolean;
-    suddenDeath: boolean;
-    mode: CountingMode;
+    channelId?: string;
+    allowChatting?: boolean;
+    allowItems?: boolean;
+    consecutiveCounting?: boolean;
+    countValidation?: boolean;
+    suddenDeath?: boolean;
+    mode?: CountingMode;
   };
 }
 
