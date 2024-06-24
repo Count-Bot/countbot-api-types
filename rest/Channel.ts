@@ -32,3 +32,16 @@ export interface RESTPatchAPICountingChannel extends BaseAuthRouteOptions<APICou
     mode: CountingMode;
   };
 }
+
+export interface RESTPostAPICountingChannel extends BaseAuthRouteOptions<APICountingChannel<Types.ObjectId> | null> {
+  Body: {
+    channelId: string;
+    guildId: string;
+    allowChatting: boolean;
+    allowItems: boolean;
+    consecutiveCounting: boolean;
+    countValidation: boolean;
+    suddenDeath: boolean;
+    mode: CountingMode;
+  };
+}
