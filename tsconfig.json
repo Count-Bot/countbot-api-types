@@ -4,8 +4,7 @@
     "lib": [
       "ESNext",
     ],
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
+    "module": "CommonJS",
     "declaration": true,
     "strict": true,
     "noImplicitReturns": true,
