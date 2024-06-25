@@ -4,7 +4,11 @@
   "description": "API types for CountBot",
   "type": "module",
   "exports": {
-    "./v1": "./build/index.js"
+    "./v1": {
+      "import": "./src/v1/index.js",
+      "require": "./src/v1/index.js",
+      "types": "./src/v1/index.d.ts"
+    }
   },
   "author": {
     "name": "CountBot",
