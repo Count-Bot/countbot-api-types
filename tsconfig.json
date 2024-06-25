@@ -4,18 +4,18 @@
     "lib": [
       "ESNext",
     ],
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "declaration": true,
     "strict": true,
     "noImplicitReturns": true,
     "baseUrl": ".",
-    "outDir": "./build"
+    "outDir": "./build",
   },
   "include": [
     "payloads/**/*.ts",
     "rest/**/*.ts",
     "src/utils/**/*.ts",
     "src/index.ts"
-  ]
+  ],
 }
