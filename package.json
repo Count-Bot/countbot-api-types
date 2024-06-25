@@ -5,9 +5,9 @@
   "type": "module",
   "exports": {
     "./v1": {
-      "import": "./src/v1/index.js",
-      "require": "./src/v1/index.js",
-      "types": "./src/v1/index.d.ts"
+      "import": "./build/index.js",
+      "require": "./build/index.js",
+      "types": "./build/index.d.ts"
     }
   },
   "author": {
