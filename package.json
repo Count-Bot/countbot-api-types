@@ -2,26 +2,27 @@
   "name": "countbot-api-types",
   "version": "1.0.0",
   "description": "API types for CountBot",
+  "type": "module",
   "exports": {
     "./payloads": {
-      "types": "./payloads/index.d.ts",
-      "require": "./payloads/index.js",
-      "import": "./payloads/index.mjs"
+      "types": "./build/payloads/index.d.ts",
+      "require": "./build/payloads/index.js",
+      "import": "./build/payloads/index.js"
     },
     "./rest": {
-      "types": "./rest/index.d.ts",
-      "require": "./rest/index.js",
-      "import": "./rest/index.mjs"
+      "types": "./build/rest/index.d.ts",
+      "require": "./build/rest/index.js",
+      "import": "./build/rest/index.js"
     },
     "./utils": {
-      "types": "./utils/index.d.ts",
-      "require": "./utils/index.js",
-      "import": "./utils/index.mjs"
+      "types": "./build/utils/index.d.ts",
+      "require": "./build/utils/index.js",
+      "import": "./build/utils/index.js"
     },
     ".": {
-      "types": "./index.d.ts",
-      "require": "./index.js",
-      "import": "./index.mjs"
+      "types": "./build/index.d.ts",
+      "require": "./build/index.js",
+      "import": "./build/index.js"
     }
   },
   "author": {
@@ -41,21 +42,15 @@
     "@typescript-eslint/parser": "^7.1.1",
     "eslint": "^8.57.0",
     "eslint-plugin-jsdoc": "^48.2.12",
-    "gen-esm-wrapper": "^1.1.3",
-    "npm-run-all2": "^6.2.0",
     "typescript": "^5.4.5",
     "typescript-eslint": "^7.13.1"
   },
   "scripts": {
-    "build": "tsc && run-p esm:*",
+    "build": "tsc",
     "lint": "eslint --cache --fix",
     "check": "npm run lint && tsc --noEmit",
     "prepare": "npm run build",
-    "preinstall": "npm run build",
-    "esm:payloads": "gen-esm-wrapper ./payloads/index.js ./payloads/index.mjs",
-    "esm:rest": "gen-esm-wrapper ./rest/index.js ./rest/index.mjs",
-    "esm:utils": "gen-esm-wrapper ./utils/index.js ./utils/index.mjs",
-    "esm:index": "gen-esm-wrapper ./index.js ./index.mjs"
+    "preinstall": "npm run build"
   },
   "dependencies": {
     "mongoose": "^8.4.3"
