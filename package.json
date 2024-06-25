@@ -52,10 +52,10 @@
     "check": "npm run lint && tsc --noEmit",
     "prepare": "npm run build",
     "preinstall": "npm run build",
-    "esm:payloads": "npx gen-esm-wrapper ./payloads/index.js ./payloads/index.mjs",
-    "esm:rest": "npx gen-esm-wrapper ./rest/index.js ./rest/index.mjs",
-    "esm:utils": "npx gen-esm-wrapper ./utils/index.js ./utils/index.mjs",
-    "esm:index": "npx gen-esm-wrapper ./index.js ./index.mjs"
+    "esm:payloads": "gen-esm-wrapper ./payloads/index.js ./payloads/index.mjs",
+    "esm:rest": "gen-esm-wrapper ./rest/index.js ./rest/index.mjs",
+    "esm:utils": "gen-esm-wrapper ./utils/index.js ./utils/index.mjs",
+    "esm:index": "gen-esm-wrapper ./index.js ./index.mjs"
   },
   "dependencies": {
     "mongoose": "^8.4.3"
