@@ -1,4 +1,4 @@
-import type { Types } from 'mongoose';
+import type { ObjectId } from '../utils/base.js';
 
 import type { CountingMode } from '../rest/Channel.js';
 
@@ -25,7 +25,7 @@ export interface CountingGoal {
   role: string | null;
 }
 
-export interface APICountingChannel<IDType extends string | typeof Types.ObjectId> {
+export interface APICountingChannel<IDType extends string | ObjectId> {
   /**
    * The Object ID of the channel.
    */
@@ -77,7 +77,7 @@ export interface APICountingChannel<IDType extends string | typeof Types.ObjectI
   /**
    * The channel's modifiers Object ID.
    */
-  modifiers: Types.ObjectId;
+  modifiers: IDType;
   /**
    * The channel's goal.
    */

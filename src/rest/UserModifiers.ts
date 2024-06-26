@@ -1,9 +1,9 @@
-import type { Types } from 'mongoose';
+import type { ObjectId } from '../utils/base.js';
 
 import type { APICountingUserModifiers } from '../payloads/UserModifiers.js';
 import type { BaseAuthRouteOptions } from '../utils/base.js';
 
-export interface RESTGetAPIUserModifiers extends BaseAuthRouteOptions<APICountingUserModifiers<typeof Types.ObjectId> | null> {
+export interface RESTGetAPIUserModifiers extends BaseAuthRouteOptions<APICountingUserModifiers<ObjectId> | null> {
   Params: {
     userId: string;
   };

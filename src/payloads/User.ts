@@ -1,3 +1,4 @@
+import type { ObjectId } from '../utils/base.js';
 import type { Types } from 'mongoose';
 
 import type { Achievement } from '../utils/achievements.js';
@@ -14,7 +15,7 @@ export interface UserAchievement {
   name: Achievement;
 }
 
-export interface APICountingUser<IDType extends string | typeof Types.ObjectId> {
+export interface APICountingUser<IDType extends string | ObjectId> {
   /**
    * The ObjectID of the user
    */
@@ -26,7 +27,7 @@ export interface APICountingUser<IDType extends string | typeof Types.ObjectId> 
   /**
    * The modifiers of the user
    */
-  modifiers: Types.ObjectId;
+  modifiers: IDType;
   /**
    * The amount of coins the user has
    */

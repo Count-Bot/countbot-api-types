@@ -1,8 +1,8 @@
-import type { Types } from 'mongoose';
+import type { ObjectId } from '../utils/base.js';
 
 import type { Modifiers } from '../utils/modifiers.js';
 
-export interface APICountingChannelModifiers<IDType extends string | typeof Types.ObjectId> {
+export interface APICountingChannelModifiers<IDType extends string | ObjectId> {
   /**
    * The ObjectID of the channel modifiers
    */

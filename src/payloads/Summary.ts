@@ -1,6 +1,6 @@
-import type { Types } from 'mongoose';
+import type { ObjectId } from '../utils/base.js';
 
-export interface APICountingSummary<IDType extends string | typeof Types.ObjectId> {
+export interface APICountingSummary<IDType extends string | ObjectId> {
   _id: IDType;
   /**
    * If the summary is the current one

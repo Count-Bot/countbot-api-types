@@ -1,10 +1,10 @@
-import type { Types } from 'mongoose';
+import type { ObjectId } from '../utils/base.js';
 
 import type { APICountingSummary } from '../payloads/Summary.js';
 import type { BaseAuthRouteOptions } from '../utils/base.js';
 
-export type RESTGetAPISummaries = BaseAuthRouteOptions<APICountingSummary<typeof Types.ObjectId>[] | null>;
-export interface RESTGetAPIDailySummary extends BaseAuthRouteOptions<APICountingSummary<typeof Types.ObjectId> | null> {
+export type RESTGetAPISummaries = BaseAuthRouteOptions<APICountingSummary<ObjectId>[] | null>;
+export interface RESTGetAPIDailySummary extends BaseAuthRouteOptions<APICountingSummary<ObjectId> | null> {
   Params: {
     summaryId: string;
   };

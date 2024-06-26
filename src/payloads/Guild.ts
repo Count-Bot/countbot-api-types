@@ -1,8 +1,8 @@
 import type { LanguageCode } from 'iso-639-1';
-import type { Types } from 'mongoose';
+import type { ObjectId } from '../utils/base.js';
 
 
-export interface APICountingGuild<IDType extends string | typeof Types.ObjectId> {
+export interface APICountingGuild<IDType extends string | ObjectId> {
   /**
    * The ObjectID of the guild
    */
