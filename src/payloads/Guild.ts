@@ -1,6 +1,6 @@
+import type { LanguageCode } from 'iso-639-1';
 import type { Types } from 'mongoose';
 
-import { LanguageCode } from '../utils/languages.js';
 
 export interface APICountingGuild<ID extends string | Types.ObjectId> {
   /**

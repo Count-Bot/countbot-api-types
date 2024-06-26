@@ -1,4 +1,4 @@
-import { StatusCodePhrases } from './codes.js';
+import type { StatusCodePhrases } from './codes.js';
 
 export interface BaseAuthRouteOptions<Response = null> {
   Header: {

@@ -1,7 +1,8 @@
 import type { Types } from 'mongoose';
+import type { LanguageCode } from 'iso-639-1';
 
-import { APICountingGuild } from '../payloads/Guild.js';
-import { BaseAuthRouteOptions, LanguageCode } from '../utils/index.js';
+import type { APICountingGuild } from '../payloads/Guild.js';
+import type { BaseAuthRouteOptions } from '../utils/index.js';
 
 export interface RESTGetAPIGuilds extends BaseAuthRouteOptions<APICountingGuild<Types.ObjectId> | null> {
   Querystring: {

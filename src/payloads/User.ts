@@ -1,7 +1,7 @@
 import type { Types } from 'mongoose';
 
-import { Achievement } from '../utils/achievements.js';
-import { CBItemString } from '../utils/items.js';
+import type { Achievement } from '../utils/achievements.js';
+import type { CBItemString } from '../utils/items.js';
 
 export interface UserAchievement {
   /**

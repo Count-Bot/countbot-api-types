@@ -1,6 +1,6 @@
 import type { Types } from 'mongoose';
 
-import { CountingMode } from '../rest/Channel.js';
+import type { CountingMode } from '../rest/Channel.js';
 
 export interface CountingGoal {
   /**
