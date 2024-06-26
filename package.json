@@ -27,6 +27,7 @@
     "eslint": "^8.57.0",
     "eslint-plugin-jsdoc": "^48.2.12",
     "iso-639-1": "^3.1.2",
+    "mongoose": "^8.4.4",
     "typescript": "^5.4.5",
     "typescript-eslint": "^7.13.1"
   },
@@ -36,8 +37,5 @@
     "check": "npm run lint && tsc --noEmit",
     "prepare": "npm run build",
     "preinstall": "npm run build"
-  },
-  "dependencies": {
-    "mongoose": "^8.4.4"
   }
 }

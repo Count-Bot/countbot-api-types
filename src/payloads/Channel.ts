@@ -25,11 +25,11 @@ export interface CountingGoal {
   role: string | null;
 }
 
-export interface APICountingChannel<ID extends string | Types.ObjectId> {
+export interface APICountingChannel<IDType extends string | typeof Types.ObjectId> {
   /**
    * The Object ID of the channel.
    */
-  _id: ID;
+  _id: IDType;
   /**
    * If the channel allows regular chatting.
    */

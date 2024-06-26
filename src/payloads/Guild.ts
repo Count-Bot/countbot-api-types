@@ -2,15 +2,15 @@ import type { LanguageCode } from 'iso-639-1';
 import type { Types } from 'mongoose';
 
 
-export interface APICountingGuild<ID extends string | Types.ObjectId> {
+export interface APICountingGuild<IDType extends string | typeof Types.ObjectId> {
   /**
    * The ObjectID of the guild
    */
-  _id: ID;
+  _id: IDType;
   /**
    * The counting channel of the guild
    */
-  channel: Types.ObjectId | null;
+  channel: IDType | null;
   /**
    * The Discord Snowflake ID of the guild
    */

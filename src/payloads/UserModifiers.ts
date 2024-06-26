@@ -2,11 +2,11 @@ import type { Types } from 'mongoose';
 
 import type { Modifiers } from '../utils/modifiers.js';
 
-export interface APICountingUserModifiers<ID extends string | Types.ObjectId> {
+export interface APICountingUserModifiers<IDType extends string | typeof Types.ObjectId> {
   /**
    * The ObjectID of the user modifiers
    */
-  _id: ID;
+  _id: IDType;
   /**
    * The ID of the user these modifiers are for.
    */

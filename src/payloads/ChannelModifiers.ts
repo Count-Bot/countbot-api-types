@@ -2,11 +2,11 @@ import type { Types } from 'mongoose';
 
 import type { Modifiers } from '../utils/modifiers.js';
 
-export interface APICountingChannelModifiers<ID extends string | Types.ObjectId> {
+export interface APICountingChannelModifiers<IDType extends string | typeof Types.ObjectId> {
   /**
    * The ObjectID of the channel modifiers
    */
-  _id: ID;
+  _id: IDType;
   /**
    * The ID of the channel these modifiers are for.
    */

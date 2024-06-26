@@ -14,11 +14,11 @@ export interface UserAchievement {
   name: Achievement;
 }
 
-export interface APICountingUser<ID extends string | Types.ObjectId> {
+export interface APICountingUser<IDType extends string | typeof Types.ObjectId> {
   /**
    * The ObjectID of the user
    */
-  _id: ID;
+  _id: IDType;
   /**
    * The Discord Snowflake ID of the user
    */

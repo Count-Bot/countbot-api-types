@@ -1,7 +1,7 @@
 import type { Types } from 'mongoose';
 
-export interface APICountingSummary<ID extends string | Types.ObjectId> {
-  _id: ID;
+export interface APICountingSummary<IDType extends string | typeof Types.ObjectId> {
+  _id: IDType;
   /**
    * If the summary is the current one
    */
