@@ -1,4 +1,4 @@
-import { Types } from 'mongoose';
+import type { Types } from 'mongoose';
 
 import { APICountingChannel } from '../payloads/Channel.js';
 import { BaseAuthRouteOptions } from '../utils/base.js';

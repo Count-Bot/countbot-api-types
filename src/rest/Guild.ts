@@ -1,4 +1,4 @@
-import { Types } from 'mongoose';
+import type { Types } from 'mongoose';
 
 import { APICountingGuild } from '../payloads/Guild.js';
 import { BaseAuthRouteOptions, LanguageCode } from '../utils/index.js';

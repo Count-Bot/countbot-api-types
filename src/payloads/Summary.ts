@@ -1,4 +1,4 @@
-import { Types } from 'mongoose';
+import type { Types } from 'mongoose';
 
 export interface APICountingSummary<ID extends string | Types.ObjectId> {
   _id: ID;

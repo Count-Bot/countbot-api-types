@@ -1,4 +1,4 @@
-import { Types } from 'mongoose';
+import type { Types } from 'mongoose';
 
 import { APICountingSummary } from '../payloads/Summary.js';
 import { BaseAuthRouteOptions } from '../utils/base.js';
