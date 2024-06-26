@@ -12,8 +12,8 @@
     "outDir": "./build",
   },
   "include": [
-    "payloads/**/*.ts",
-    "rest/**/*.ts",
+    "src/payloads/**/*.ts",
+    "src/rest/**/*.ts",
     "src/utils/**/*.ts",
     "src/index.ts"
   ],
