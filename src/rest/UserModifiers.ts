@@ -1,9 +1,7 @@
-import type { ObjectId } from '../utils/base.js';
-
 import type { APICountingUserModifiers } from '../payloads/UserModifiers.js';
 import type { BaseAuthRouteOptions } from '../utils/base.js';
 
-export interface RESTGetAPIUserModifiers extends BaseAuthRouteOptions<APICountingUserModifiers<ObjectId> | null> {
+export interface RESTGetAPIUserModifiers<T> extends BaseAuthRouteOptions<APICountingUserModifiers<T> | null> {
   Params: {
     userId: string;
   };

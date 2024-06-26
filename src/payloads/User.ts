@@ -1,6 +1,3 @@
-import type { ObjectId } from '../utils/base.js';
-import type { Types } from 'mongoose';
-
 import type { Achievement } from '../utils/achievements.js';
 import type { CBItemString } from '../utils/items.js';
 
@@ -15,7 +12,7 @@ export interface UserAchievement {
   name: Achievement;
 }
 
-export interface APICountingUser<IDType extends string | ObjectId> {
+export interface APICountingUser<IDType> {
   /**
    * The ObjectID of the user
    */
@@ -51,7 +48,7 @@ export interface APICountingUser<IDType extends string | ObjectId> {
   /**
    * The achievements of the user
    */
-  achievements: Types.DocumentArray<UserAchievement>;
+  achievements: UserAchievement[];
   /**
    * The timestamp when the user last voted
    */

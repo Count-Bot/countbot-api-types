@@ -1,6 +1,4 @@
-import type { ObjectId } from '../utils/base.js';
-
-export interface APICountingSummary<IDType extends string | ObjectId> {
+export interface APICountingSummary<IDType> {
   _id: IDType;
   /**
    * If the summary is the current one

@@ -1,5 +1,3 @@
-import type { ObjectId } from '../utils/base.js';
-
 import type { CountingMode } from '../rest/Channel.js';
 
 export interface CountingGoal {
@@ -25,7 +23,7 @@ export interface CountingGoal {
   role: string | null;
 }
 
-export interface APICountingChannel<IDType extends string | ObjectId> {
+export interface APICountingChannel<IDType> {
   /**
    * The Object ID of the channel.
    */

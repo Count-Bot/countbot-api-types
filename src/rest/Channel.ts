@@ -1,5 +1,3 @@
-import type { ObjectId } from '../utils/base.js';
-
 import type { APICountingChannel } from '../payloads/Channel.js';
 import type { BaseAuthRouteOptions } from '../utils/base.js';
 
@@ -7,19 +5,19 @@ export const CountingModes = ['DEFAULT', 'EVEN', 'ODD', 'THREE', 'FOUR', 'FIVE',
 
 export type CountingMode = typeof CountingModes[number];
 
-export interface RESTGetAPICountingChannels extends BaseAuthRouteOptions<APICountingChannel<ObjectId> | null> {
+export interface RESTGetAPICountingChannels<T> extends BaseAuthRouteOptions<APICountingChannel<T> | null> {
   Querystring: {
     channelId?: string;
   };
 }
 
-export interface RESTGetAPICountingChannel extends BaseAuthRouteOptions<APICountingChannel<ObjectId> | null> {
+export interface RESTGetAPICountingChannel<T> extends BaseAuthRouteOptions<APICountingChannel<T> | null> {
   Params: {
     channelId: string;
   };
 }
 
-export interface RESTPatchAPICountingChannel extends BaseAuthRouteOptions<APICountingChannel<ObjectId> | null> {
+export interface RESTPatchAPICountingChannel<T> extends BaseAuthRouteOptions<APICountingChannel<T> | null> {
   Params: {
     channelId: string;
   };
@@ -34,7 +32,7 @@ export interface RESTPatchAPICountingChannel extends BaseAuthRouteOptions<APICou
   };
 }
 
-export interface RESTPostAPICountingChannel extends BaseAuthRouteOptions<APICountingChannel<ObjectId> | null> {
+export interface RESTPostAPICountingChannel<T> extends BaseAuthRouteOptions<APICountingChannel<T> | null> {
   Body: {
     channelId: string;
     guildId: string;

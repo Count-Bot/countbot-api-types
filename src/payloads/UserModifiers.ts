@@ -1,8 +1,6 @@
-import type { ObjectId } from '../utils/base.js';
-
 import type { Modifiers } from '../utils/modifiers.js';
 
-export interface APICountingUserModifiers<IDType extends string | ObjectId> {
+export interface APICountingUserModifiers<IDType> {
   /**
    * The ObjectID of the user modifiers
    */

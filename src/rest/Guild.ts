@@ -1,22 +1,19 @@
-import type { ObjectId } from '../utils/base.js';
-import type { LanguageCode } from 'iso-639-1';
-
 import type { APICountingGuild } from '../payloads/Guild.js';
-import type { BaseAuthRouteOptions } from '../utils/index.js';
+import type { BaseAuthRouteOptions, LanguageCode } from '../utils/index.js';
 
-export interface RESTGetAPIGuilds extends BaseAuthRouteOptions<APICountingGuild<ObjectId> | null> {
+export interface RESTGetAPIGuilds<T> extends BaseAuthRouteOptions<APICountingGuild<T> | null> {
   Querystring: {
     guildId?: string;
   };
 }
 
-export interface RESTGetAPIGuild extends BaseAuthRouteOptions<APICountingGuild<ObjectId> | null> {
+export interface RESTGetAPIGuild<T> extends BaseAuthRouteOptions<APICountingGuild<T> | null> {
   Params: {
     guildId: string;
   };
 }
 
-export interface RESTPatchAPIGuild extends BaseAuthRouteOptions<APICountingGuild<ObjectId> | null> {
+export interface RESTPatchAPIGuild<T> extends BaseAuthRouteOptions<APICountingGuild<T> | null> {
   Params: {
     guildId: string;
   };
@@ -25,7 +22,7 @@ export interface RESTPatchAPIGuild extends BaseAuthRouteOptions<APICountingGuild
   };
 }
 
-export interface RESTPostAPIGuild extends BaseAuthRouteOptions<APICountingGuild<ObjectId> | null> {
+export interface RESTPostAPIGuild<T> extends BaseAuthRouteOptions<APICountingGuild<T> | null> {
   Body: {
     guildId: string;
     language?: LanguageCode;

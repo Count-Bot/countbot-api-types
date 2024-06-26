@@ -1,4 +1,3 @@
-import type { Types } from 'mongoose';
 import type { StatusCodePhrases } from './codes.js';
 
 export interface BaseAuthRouteOptions<Response = null> {
@@ -11,5 +10,3 @@ export interface BaseAuthRouteOptions<Response = null> {
     data: Response;
   };
 }
-
-export type ObjectId = typeof Types.ObjectId;

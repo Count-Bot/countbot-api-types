@@ -1,8 +1,7 @@
-import type { LanguageCode } from 'iso-639-1';
-import type { ObjectId } from '../utils/base.js';
+import type {  LanguageCode } from '../utils/index.js';
 
 
-export interface APICountingGuild<IDType extends string | ObjectId> {
+export interface APICountingGuild<IDType> {
   /**
    * The ObjectID of the guild
    */

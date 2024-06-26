@@ -1,8 +1,6 @@
-import type { ObjectId } from '../utils/base.js';
-
 import type { Modifiers } from '../utils/modifiers.js';
 
-export interface APICountingChannelModifiers<IDType extends string | ObjectId> {
+export interface APICountingChannelModifiers<IDType> {
   /**
    * The ObjectID of the channel modifiers
    */
