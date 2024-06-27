@@ -2,13 +2,6 @@
   "name": "countbot-api-types",
   "version": "1.0.0",
   "description": "API types for CountBot",
-  "exports": {
-    ".": {
-      "import": "./build/index.js",
-      "require": "./build/index.js",
-      "types": "./build/index.d.ts"
-    }
-  },
   "author": {
     "name": "CountBot",
     "email": "realcountbot@gmail.com",
