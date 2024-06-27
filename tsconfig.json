@@ -1,20 +1,19 @@
 {
+  "files": [
+    "src/index.d.ts"
+  ],
   "compilerOptions": {
     "target": "ES2022",
     "lib": [
       "ESNext",
     ],
     "module": "CommonJS",
-    "declaration": true,
-    "strict": true,
-    "noImplicitReturns": true,
-    "baseUrl": ".",
-    "outDir": "./build",
-  },
-  "include": [
-    "src/payloads/**/*.ts",
-    "src/rest/**/*.ts",
-    "src/utils/**/*.ts",
-    "src/index.ts"
-  ],
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "types": [],
+    "noEmit": true,
+    "forceConsistentCasingInFileNames": true
+  }
 }
