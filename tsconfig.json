@@ -1,7 +1,4 @@
 {
-  "files": [
-    "index.d.ts"
-  ],
   "compilerOptions": {
     "target": "ES2022",
     "lib": [
@@ -14,6 +11,14 @@
     "strictFunctionTypes": true,
     "types": [],
     "noEmit": true,
-    "forceConsistentCasingInFileNames": true
-  }
+    "forceConsistentCasingInFileNames": true,
+    "outDir": ".",
+    "baseUrl": "."
+  },
+  "include": [
+    "src/payloads/**/*.ts",
+    "src/rest/**/*.ts",
+    "src/utils/**/*.ts",
+    "src/index.ts"
+  ],
 }
