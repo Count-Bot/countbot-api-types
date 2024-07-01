@@ -24,9 +24,9 @@
   },
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "import": "./build/index.js",
+      "require": "./index.js",
+      "types": "./index.d.ts"
     }
   },
   "scripts": {

@@ -8,11 +8,11 @@
     "noImplicitAny": true,
     "noImplicitThis": true,
     "strictNullChecks": true,
+    "declaration": true,
     "strictFunctionTypes": true,
     "types": [],
-    "noEmit": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": ".",
+    "outDir": "./build",
     "baseUrl": "."
   },
   "include": [
