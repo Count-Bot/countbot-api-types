@@ -1,6 +1,6 @@
 {
   "name": "@countbot/countbot-api-types",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "API types for CountBot",
   "author": {
     "name": "CountBot",
@@ -31,7 +31,6 @@
   },
   "scripts": {
     "build": "tsc",
-    "prepare": "npm run build"
-  },
-  "type": "module"
+    "preinstall": "npm run build"
+  }
 }
