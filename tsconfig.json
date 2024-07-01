@@ -13,12 +13,11 @@
     "types": [],
     "forceConsistentCasingInFileNames": true,
     "outDir": "./build",
-    "baseUrl": "."
+    "baseUrl": "./src/",
+    "rootDir": "./src/",
+    "sourceMap": true,
   },
   "include": [
-    "src/payloads/**/*.ts",
-    "src/rest/**/*.ts",
-    "src/utils/**/*.ts",
-    "src/index.ts"
+    "./src/"
   ],
 }
