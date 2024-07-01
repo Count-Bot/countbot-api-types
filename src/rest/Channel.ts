@@ -1,7 +1,7 @@
 import type { APICountingChannel } from '../payloads/Channel.js';
 import type { BaseAuthRouteOptions } from '../utils/base.js';
 
-export const CountingModes = ['DEFAULT', 'EVEN', 'ODD', 'THREE', 'FOUR', 'FIVE', 'SIX', 'SEVEN', 'EIGHT', 'NINE', 'TEN', 'PRIME'];
+export const CountingModes = ['DEFAULT', 'EVEN', 'ODD', 'THREE', 'FOUR', 'FIVE', 'SIX', 'SEVEN', 'EIGHT', 'NINE', 'TEN', 'PRIME'] as const;
 
 export type CountingMode = typeof CountingModes[number];
 
