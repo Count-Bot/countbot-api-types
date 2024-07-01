@@ -30,6 +30,6 @@
     }
   },
   "scripts": {
-    "preinstall": "tsc"
+    "prepare": "tsc"
   }
 }
