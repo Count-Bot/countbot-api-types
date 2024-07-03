@@ -1,6 +1,6 @@
 {
   "name": "@countbot/countbot-api-types",
-  "version": "1.5.1",
+  "version": "1.6.1",
   "description": "API types for CountBot",
   "author": {
     "name": "CountBot",
@@ -9,7 +9,8 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Count-Bot/countbot-api-types/issues"
+    "url": "https://github.com/Count-Bot/countbot-api-types/issues",
+    "email": "realcountbot@gmail.com"
   },
   "homepage": "https://github.com/Count-Bot/countbot-api-types#readme",
   "devDependencies": {
@@ -25,8 +26,8 @@
   "exports": {
     ".": {
       "import": "./build/index.js",
-      "require": "./index.js",
-      "types": "./index.d.ts"
+      "require": "./build/index.js",
+      "types": "./build/index.d.ts"
     }
   },
   "scripts": {

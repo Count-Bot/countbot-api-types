@@ -10,8 +10,6 @@
     "strictNullChecks": true,
     "declaration": true,
     "strictFunctionTypes": true,
-    "types": [],
-    "forceConsistentCasingInFileNames": true,
     "outDir": "./build",
     "baseUrl": "./src/",
     "rootDir": "./src/",
