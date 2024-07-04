@@ -66,7 +66,7 @@ export interface APICountingUser<IDType> {
    */
   itemLimitReachedAt: number;
   /**
-   * The timestamp when the user used an item cooldown 
+   * The timestamp when the user used an item cooldown
    */
   itemUseCooldownEndAt: number;
   /**

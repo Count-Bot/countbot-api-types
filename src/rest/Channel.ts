@@ -1,9 +1,22 @@
 import type { APICountingChannel } from '../payloads/Channel.js';
 import type { BaseAuthRouteOptions } from '../utils/base.js';
 
-export const CountingModes = ['DEFAULT', 'EVEN', 'ODD', 'THREE', 'FOUR', 'FIVE', 'SIX', 'SEVEN', 'EIGHT', 'NINE', 'TEN', 'PRIME'] as const;
+export const CountingModes = [
+  'DEFAULT',
+  'EVEN',
+  'ODD',
+  'THREE',
+  'FOUR',
+  'FIVE',
+  'SIX',
+  'SEVEN',
+  'EIGHT',
+  'NINE',
+  'TEN',
+  'PRIME',
+] as const;
 
-export type CountingMode = typeof CountingModes[number];
+export type CountingMode = (typeof CountingModes)[number];
 
 export interface RESTGetAPICountingChannels<T> extends BaseAuthRouteOptions<APICountingChannel<T> | null> {
   Querystring: {

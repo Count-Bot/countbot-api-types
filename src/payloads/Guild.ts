@@ -1,5 +1,4 @@
-import type {  LanguageCode } from '../utils/index.js';
-
+import type { LanguageCode } from '../utils/index.js';
 
 export interface APICountingGuild<IDType> {
   /**

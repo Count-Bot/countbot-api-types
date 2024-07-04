@@ -1,6 +1,6 @@
 {
   "name": "@countbot/countbot-api-types",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "API types for CountBot",
   "author": {
     "name": "CountBot",
@@ -14,12 +14,14 @@
   },
   "homepage": "https://github.com/Count-Bot/countbot-api-types#readme",
   "devDependencies": {
-    "@eslint/js": "^9.5.0",
     "@types/node": "^20.14.5",
-    "@typescript-eslint/eslint-plugin": "^7.1.1",
-    "@typescript-eslint/parser": "^7.1.1",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
+    "cross-env": "^7.0.3",
     "eslint": "^8.57.0",
-    "eslint-plugin-jsdoc": "^48.2.12",
+    "eslint-formatter-pretty": "^6.0.1",
+    "eslint-plugin-import": "^2.29.1",
+    "prettier": "^3.3.2",
     "typescript": "^5.4.5",
     "typescript-eslint": "^7.13.1"
   },
@@ -31,7 +33,10 @@
     }
   },
   "scripts": {
-    "build": "tsc",
-    "preinstall": "npm run build"
+    "build:node": "tsc",
+    "build:ci": "tsc --noEmit",
+    "format": "prettier --write . && cross-env ESLINT_USE_FLAT_CONFIG=false eslint --fix  src",
+    "lint": "prettier --check . && cross-env ESLINT_USE_FLAT_CONFIG=false eslint src",
+    "preinstall": "npm run build:node"
   }
 }

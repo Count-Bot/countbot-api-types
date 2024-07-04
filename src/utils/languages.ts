@@ -1,5 +1,5 @@
 export type LanguageCode =
-  'aa'
+  | 'aa'
   | 'ab'
   | 'ae'
   | 'af'

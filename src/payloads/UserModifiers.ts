@@ -8,7 +8,7 @@ export interface APICountingUserModifiers<IDType> {
   /**
    * The ID of the user these modifiers are for.
    */
-  userId: string,
+  userId: string;
   /**
    * The freeze modifier
    */
