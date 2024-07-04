@@ -1,6 +1,6 @@
 {
   "name": "@countbot/countbot-api-types",
-  "version": "1.7.3",
+  "version": "1.8.0",
   "description": "API types for CountBot",
   "author": {
     "name": "CountBot",
@@ -25,6 +25,10 @@
     "typescript": "^5.5.3",
     "typescript-eslint": "^7.15.0"
   },
+  "files": [
+    "build",
+    "src"
+  ],
   "exports": {
     ".": {
       "import": "./build/index.js",
@@ -37,6 +41,6 @@
     "build:ci": "tsc --noEmit",
     "format": "prettier --write . && cross-env ESLINT_USE_FLAT_CONFIG=false eslint --fix --format=pretty src",
     "lint": "prettier --check . && cross-env ESLINT_USE_FLAT_CONFIG=false eslint --format=pretty src",
-    "preinstall": "npm run build:node"
+    "prepare": "npm run build:node"
   }
 }
