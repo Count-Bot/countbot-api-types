@@ -1,6 +1,6 @@
 {
   "name": "@countbot/countbot-api-types",
-  "version": "1.7.2",
+  "version": "1.7.3",
   "description": "API types for CountBot",
   "author": {
     "name": "CountBot",
@@ -22,8 +22,8 @@
     "eslint-formatter-pretty": "^5.0.0",
     "eslint-plugin-import": "^2.29.1",
     "prettier": "^3.3.2",
-    "typescript": "^5.4.5",
-    "typescript-eslint": "^7.13.1"
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^7.15.0"
   },
   "exports": {
     ".": {
