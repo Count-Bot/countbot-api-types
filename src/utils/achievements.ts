@@ -11,3 +11,14 @@ export type Achievement =
   | 'COUNTBOT_VILLIAN'
   | 'SELFLESS_COUNTER'
   | 'BOT_KILLER';
+
+export interface AchievementAward {
+  /**
+   * Coins to award a user
+   */
+  coins: number;
+  /**
+   * XP to award a user
+   */
+  xp: number;
+}
