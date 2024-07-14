@@ -56,7 +56,7 @@ export interface APICountingUser<IDType> {
   /**
    * The number of votes the user has
    */
-  votes: boolean;
+  votes: number;
   /**
    * The boosting status of the user
    */
