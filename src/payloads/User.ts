@@ -54,6 +54,10 @@ export interface APICountingUser<IDType> {
    */
   votedAt: number;
   /**
+   * The number of votes the user has
+   */
+  votes: boolean;
+  /**
    * The boosting status of the user
    */
   premiumEndAt: number;
