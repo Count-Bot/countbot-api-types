@@ -21,6 +21,7 @@ export type CountingMode = (typeof CountingModes)[number];
 export interface RESTGetAPICountingChannels<T> extends BaseAuthRouteOptions<APICountingChannel<T> | null> {
   Querystring: {
     channelId?: string;
+    guildId?: string;
   };
 }
 
