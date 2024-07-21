@@ -58,9 +58,9 @@ export interface APICountingUser<IDType> {
    */
   votes: number;
   /**
-   * The boosting status of the user
+   * The number of premium guilds the user has
    */
-  premiumEndAt: number;
+  premiumCount: number;
   /**
    * The number of items bought today
    */
