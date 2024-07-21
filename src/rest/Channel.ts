@@ -50,11 +50,5 @@ export interface RESTPostAPICountingChannel<T> extends BaseAuthRouteOptions<APIC
   Body: {
     channelId: string;
     guildId: string;
-    allowChatting?: boolean;
-    allowItems?: boolean;
-    consecutiveCounting?: boolean;
-    countValidation?: boolean;
-    suddenDeath?: boolean;
-    mode?: CountingMode;
   };
 }
