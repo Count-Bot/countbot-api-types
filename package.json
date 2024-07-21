@@ -1,6 +1,6 @@
 {
   "name": "@countbot/countbot-api-types",
-  "version": "1.12.2",
+  "version": "1.13.0",
   "description": "API types for CountBot",
   "author": {
     "name": "CountBot",

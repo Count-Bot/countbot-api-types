@@ -7,7 +7,6 @@ export type Achievement =
   | 'ITEM_HUNTER'
   | 'COUNTBOT_HERO'
   | 'COUNTBOT_CHAMPION'
-  | 'COUNTBOT_SUPERSTAR'
   | 'COUNTBOT_VILLIAN'
   | 'SELFLESS_COUNTER'
   | 'BOT_KILLER';
