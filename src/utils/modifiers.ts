@@ -1,4 +1,4 @@
-export type ModifierValues<T> = [value: T, timeLeft: number];
+export type ModifierValues<T> = [value: T, timeLeft: number, reset?: boolean];
 
 export interface Modifiers<T> extends ModifiersMethods<T> {
   /**
