@@ -37,6 +37,10 @@ export interface APICountingChannel<IDType> {
    */
   allowItems: boolean;
   /**
+   * If the channel allows milestones.
+   */
+  allowMilestones: boolean;
+  /**
    * The channel's Discord ID.
    */
   channelId: string;

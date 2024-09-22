@@ -39,6 +39,7 @@ export interface RESTPatchAPICountingChannel<T> extends BaseAuthRouteOptions<API
     channelId?: string;
     allowChatting?: boolean;
     allowItems?: boolean;
+    allowMilestones?: boolean;
     consecutiveCounting?: boolean;
     countValidation?: boolean;
     suddenDeath?: boolean;
