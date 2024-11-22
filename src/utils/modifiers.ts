@@ -2,15 +2,11 @@ export type ModifierValues<T> = [value: T, timeLeft: number, reset?: boolean];
 
 export interface Modifiers<T> extends ModifiersMethods<T> {
   /**
-   * The default value of the modifier
-   */
-  defaultValue: T;
-  /**
    * The current value of the modifier
    */
   value: T;
   /**
-   * The timestamp when the modifier is set to end
+   * The timestamp in EPOCH when the modifier is set to end (null if not set)
    */
   endTimestamp: number | null;
 }
