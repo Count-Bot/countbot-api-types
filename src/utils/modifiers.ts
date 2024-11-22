@@ -2,6 +2,10 @@ export type ModifierValues<T> = [value: T, timeLeft: number, reset?: boolean];
 
 export interface Modifiers<T> extends ModifiersMethods<T> {
   /**
+   * The default value of the modifier
+   */
+  defaultValue: T;
+  /**
    * The current value of the modifier
    */
   value: T;
