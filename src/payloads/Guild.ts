@@ -1,5 +1,28 @@
 import type { LanguageCode } from '../utils/index.js';
 
+/**
+ * Premium is either enabled or disabled on the user-end
+ * MONTHLY, YEARLY, and LIFETIME are only used for display purposes, not for any actual logic
+ */
+export enum PremiumStatus {
+  /**
+   * The guild is not premium
+   */
+  NONE = 0,
+  /**
+   * The guild is premium
+   */
+  MONTHLY = 1,
+  /**
+   * The guild has a yearly subscription
+   */
+  YEARLY = 2,
+  /**
+   * The guild has a lifetime subscription
+   */
+  LIFETIME = 3,
+}
+
 export interface APICountingGuild<IDType> {
   /**
    * The ObjectID of the guild
@@ -18,11 +41,7 @@ export interface APICountingGuild<IDType> {
    */
   language: LanguageCode;
   /**
-   * Timestamp when CountBot Plus ends (milliseconds since epoch)
+   * The premium status of the guild
    */
-  premiumEndTimestamp: number;
-  /**
-   * If the guild has a lifetime subscription
-   */
-  lifetime: boolean;
+  premium: PremiumStatus;
 }
