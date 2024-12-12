@@ -21,7 +21,7 @@ export enum StatusCodePhrases {
   MethodNotAllowed = 'MethodNotAllowed',
   Forbidden = 'Forbidden',
   Unauthorized = 'Unauthorized',
-  InternalError = 'InternalError',
+  InternalServerError = 'InternalServerError',
   SummaryFound = 'SummaryFound',
   SummaryNotFound = 'SummaryNotFound',
   InvalidObjectId = 'InvalidObjectId',
@@ -32,5 +32,6 @@ export enum StatusCodePhrases {
   ChannelLeaderboardFound = 'ChannelLeaderboardFound',
   UserLeaderboardFound = 'UserLeaderboardFound',
   TokenCreated = 'TokenCreated',
+  TooManyRequests = 'TooManyRequests',
   VoteSuccess = 'VoteSuccess',
 }
