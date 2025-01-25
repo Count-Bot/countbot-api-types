@@ -53,3 +53,10 @@ export interface RESTPostAPICountingChannel<T> extends BaseAuthRouteOptions<APIC
     guildId: string;
   };
 }
+
+export interface RESTGetAPICountingChannelLeaderboard<T> extends BaseAuthRouteOptions<APICountingChannel<T> | null> {
+  Querystring: {
+    page?: number;
+  };
+}
+
