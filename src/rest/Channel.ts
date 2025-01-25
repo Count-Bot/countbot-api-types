@@ -59,4 +59,3 @@ export interface RESTGetAPICountingChannelLeaderboard<T> extends BaseAuthRouteOp
     page?: number;
   };
 }
-
