@@ -54,7 +54,7 @@ export interface RESTPostAPICountingChannel<T> extends BaseAuthRouteOptions<APIC
   };
 }
 
-export interface RESTGetAPICountingChannelLeaderboard<T> extends BaseAuthRouteOptions<APICountingChannel<T> | null> {
+export interface RESTGetAPICountingChannelLeaderboard<T> extends BaseAuthRouteOptions<APICountingChannel<T>[] | null> {
   Querystring: {
     page?: number;
   };

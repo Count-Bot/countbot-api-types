@@ -19,7 +19,7 @@ export interface RESTPostAPICountingUser<T> extends BaseAuthRouteOptions<APICoun
   };
 }
 
-export interface RESTGetAPICountingUserLeaderboard<T> extends BaseAuthRouteOptions<APICountingUser<T> | null> {
+export interface RESTGetAPICountingUserLeaderboard<T> extends BaseAuthRouteOptions<APICountingUser<T>[] | null> {
   Querystring: {
     page?: number;
   };
