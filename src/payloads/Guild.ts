@@ -6,12 +6,6 @@ export enum PremiumType {
   Infinity = 2,
 }
 
-export enum PremiumCycle {
-  Monthly = 1,
-  Yearly = 2,
-  Lifetime = 3,
-}
-
 export interface APICountingGuild<IDType> {
   /**
    * The ObjectID of the guild
@@ -30,7 +24,7 @@ export interface APICountingGuild<IDType> {
    */
   language: LanguageCode;
   /**
-   * The premium status of the guild
+   * The premium type of the guild
    */
-  premium: number;
+  premium: PremiumType;
 }
