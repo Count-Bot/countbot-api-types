@@ -23,22 +23,27 @@ export interface CountingGoal {
   role: string | null;
 }
 
+export interface CountingConfig {
+  chatting: boolean;
+  itemUse: boolean;
+  consecutiveCounting: boolean;
+  suddenDeath: boolean;
+  countReactions: boolean;
+  correctReaction: string;
+  incorrectReaction: string;
+}
+
+export interface CountingNotifications {
+  achievements: boolean;
+  itemDrop: boolean;
+  milestones: boolean;
+}
+
 export interface APICountingChannel<IDType> {
   _id: IDType;
-  config: {
-    chatting: boolean;
-    itemUse: boolean;
-    consecutiveCounting: boolean;
-    suddenDeath: boolean;
-    countReactions: boolean;
-    correctReaction: string;
-    incorrectReaction: string;
-  };
-  notifications: {
-    achievements: boolean;
-    itemDrop: boolean;
-    milestones: boolean;
-  };
+  enabled: boolean;
+  config: CountingConfig;
+  notifications: CountingNotifications;
   channelId: string;
   guildId: string;
   count: number;
