@@ -21,7 +21,7 @@ export interface ModifiersMethods<T> {
    * @param value The value to set
    * @param duration The duration in milliseconds
    */
-  setModifier(value: T, duration: number): Promise<boolean>;
+  setModifier(value: T, duration: number): Promise<void>;
   /**
    * Get the value and remaining duration of the modifier
    */
