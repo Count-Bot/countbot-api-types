@@ -24,64 +24,27 @@ export interface CountingGoal {
 }
 
 export interface APICountingChannel<IDType> {
-  /**
-   * The Object ID of the channel.
-   */
   _id: IDType;
-  /**
-   * If the channel allows regular chatting.
-   */
-  allowChatting: boolean;
-  /**
-   * If the channel allows items.
-   */
-  allowItems: boolean;
-  /**
-   * If the channel allows milestones.
-   */
-  allowMilestones: boolean;
-  /**
-   * The channel's Discord ID.
-   */
+  config: {
+    chatting: boolean;
+    itemUse: boolean;
+    consecutiveCounting: boolean;
+    suddenDeath: boolean;
+    countReactions: boolean;
+    correctReaction: string;
+    incorrectReaction: string;
+  };
+  notifications: {
+    achievements: boolean;
+    itemDrop: boolean;
+    milestones: boolean;
+  };
   channelId: string;
-  /**
-   * The channel's guild Discord ID.
-   */
   guildId: string;
-  /**
-   * If consecutive counting is enabled.
-   */
-  consecutiveCounting: boolean;
-  /**
-   * If count validation (reactions) is enabled.
-   */
-  countValidation: boolean;
-  /**
-   * If sudden death is enabled.
-   */
-  suddenDeath: boolean;
-  /**
-   * The channel count.
-   */
   count: number;
-  /**
-   * The number of items found in the channel.
-   */
   items: number;
-  /**
-   * The last count user ID.
-   */
   lastCountId: string | null;
-  /**
-   * The counting mode.
-   */
   mode: CountingMode;
-  /**
-   * The channel's modifiers Object ID.
-   */
   modifiers: IDType;
-  /**
-   * The channel's goal.
-   */
   goal: CountingGoal | null;
 }
