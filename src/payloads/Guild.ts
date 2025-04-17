@@ -1,9 +1,8 @@
 import type { LanguageCode } from '../utils/index.js';
 
-export enum PremiumType {
+export enum GuildPremiumType {
   Default = 0,
   Plus = 1,
-  Infinity = 2,
 }
 
 export interface APICountingGuild<IDType> {
@@ -26,5 +25,5 @@ export interface APICountingGuild<IDType> {
   /**
    * The premium type of the guild
    */
-  premium: PremiumType;
+  premium: GuildPremiumType;
 }

@@ -1,6 +1,11 @@
 import type { Achievement } from '../utils/achievements.js';
 import type { CBItemString } from '../utils/items.js';
 
+export enum UserPremiumType {
+  Default = 0,
+  Infinity = 1,
+}
+
 export interface UserAchievement {
   /**
    * The timestamp when the achievement was achieved
@@ -76,5 +81,5 @@ export interface APICountingUser<IDType> {
   /**
    * The lifetime status of the user
    */
-  lifetime: boolean;
+  premium: UserPremiumType;
 }
