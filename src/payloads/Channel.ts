@@ -25,6 +25,7 @@ export interface CountingGoal {
 
 export interface CountingConfig {
   chatting: boolean;
+  itemDrop: boolean;
   itemUse: boolean;
   consecutiveCounting: boolean;
   suddenDeath: boolean;
@@ -35,7 +36,6 @@ export interface CountingConfig {
 
 export interface CountingNotifications {
   achievements: boolean;
-  itemDrop: boolean;
   milestones: boolean;
 }
 
