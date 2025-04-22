@@ -1,4 +1,4 @@
-export * from './Achievements.js';
+export * from './Achievement.js';
 export * from './Channel.js';
 export * from './ChannelModifiers.js';
 export * from './Guild.js';
