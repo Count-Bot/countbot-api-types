@@ -1,20 +1,8 @@
-import type { Achievement } from '../utils/achievements.js';
 import type { CBItemString } from '../utils/items.js';
 
 export enum UserPremiumType {
   Default = 0,
   Infinity = 1,
-}
-
-export interface UserAchievement {
-  /**
-   * The timestamp when the achievement was achieved
-   */
-  achievedAt: number;
-  /**
-   * The name of the achievement
-   */
-  name: Achievement;
 }
 
 export interface APICountingUser<IDType> {
@@ -51,10 +39,6 @@ export interface APICountingUser<IDType> {
    */
   inventory: CBItemString[];
   /**
-   * The achievements of the user
-   */
-  achievements: UserAchievement[];
-  /**
    * The timestamp when the user last voted
    */
   votedAt: number;
@@ -62,10 +46,6 @@ export interface APICountingUser<IDType> {
    * The number of votes the user has
    */
   votes: number;
-  /**
-   * The number of premium guilds the user has
-   */
-  premiumCount: number;
   /**
    * The number of items bought today
    */

@@ -1,4 +1,4 @@
-export type Achievement =
+export type AchievementId =
   | 'COUNTER_AMATURE'
   | 'COUNTER_EXPERIENCED'
   | 'COUNTER_LEGENDARY'
@@ -11,13 +11,9 @@ export type Achievement =
   | 'SELFLESS_COUNTER'
   | 'BOT_KILLER';
 
-export interface AchievementAward {
-  /**
-   * Coins to award a user
-   */
-  coins: number;
-  /**
-   * XP to award a user
-   */
-  xp: number;
+export interface APIAchievement<IDType> {
+  _id: IDType;
+  userId: string;
+  achievement: AchievementId;
+  awardedAt: Date;
 }
