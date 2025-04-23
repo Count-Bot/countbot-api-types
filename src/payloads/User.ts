@@ -62,4 +62,8 @@ export interface APICountingUser<IDType> {
    * The lifetime status of the user
    */
   premium: UserPremiumType;
+  /**
+   * Initialized when the user was created but will be updated at every count.
+   */
+  lastCountAt: Date;
 }
