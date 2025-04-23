@@ -25,6 +25,5 @@ export interface RESTPatchAPIGuild<T> extends BaseAuthRouteOptions<APICountingGu
 export interface RESTPostAPIGuild<T> extends BaseAuthRouteOptions<APICountingGuild<T> | null> {
   Body: {
     guildId: string;
-    language?: LanguageCode;
   };
 }
