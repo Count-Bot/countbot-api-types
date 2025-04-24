@@ -42,7 +42,7 @@ export interface CountingReactions {
   /**
    * The emojis to use for the reactions.
    */
-  emojis: null | CountingReactionEmojis;
+  emojis: CountingReactionEmojis | null;
 }
 
 export interface CountingConfig {
@@ -102,7 +102,7 @@ export interface APICountingChannel<IDType> {
   /**
    * The channel reactions configuration.
    */
-  reactions: null | CountingReactions;
+  reactions: CountingReactions;
   /**
    * The channel ID.
    */
@@ -134,5 +134,5 @@ export interface APICountingChannel<IDType> {
   /**
    * The counting goal of the channel
    */
-  goal: null | CountingGoal;
+  goal: CountingGoal | null;
 }
