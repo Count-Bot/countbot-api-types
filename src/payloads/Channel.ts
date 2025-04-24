@@ -27,11 +27,11 @@ export interface CountingReactionEmojis {
   /**
    * The emoji to use for correct counts.
    */
-  correct: string;
+  correct?: string | null;
   /**
    * The emoji to use for incorrect counts.
    */
-  incorrect: string;
+  incorrect?: string | null;
 }
 
 export interface CountingReactions {
@@ -42,7 +42,7 @@ export interface CountingReactions {
   /**
    * The emojis to use for the reactions.
    */
-  emojis: CountingReactionEmojis | null;
+  emojis?: CountingReactionEmojis;
 }
 
 export interface CountingConfig {
