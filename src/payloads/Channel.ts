@@ -23,11 +23,7 @@ export interface CountingGoal {
   role: string | null;
 }
 
-export interface CountingReactions {
-  /**
-   * If the reactions are enabled.
-   */
-  enabled: boolean;
+export interface CountingReactionEmojis {
   /**
    * The emoji to use for correct counts.
    */
@@ -36,6 +32,17 @@ export interface CountingReactions {
    * The emoji to use for incorrect counts.
    */
   incorrect: string;
+}
+
+export interface CountingReactions {
+  /**
+   * If the reactions are enabled.
+   */
+  enabled: boolean;
+  /**
+   * The emojis to use for the reactions.
+   */
+  emojis: null | CountingReactionEmojis;
 }
 
 export interface CountingConfig {
