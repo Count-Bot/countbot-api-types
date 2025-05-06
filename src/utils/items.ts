@@ -10,11 +10,9 @@ export enum ItemMode {
 
 export enum CBItemRarity {
   Common = 5,
-  Uncommon = 10,
   Rare = 20,
-  Epic = 30,
-  Legendary = 40,
-  Mythic = 50,
+  Epic = 60,
+  Mythic = 100,
 }
 
 export enum CBItemType {
