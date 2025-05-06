@@ -27,6 +27,10 @@ export interface APICountingUser<IDType> {
    */
   xp: number;
   /**
+   * The number of achievements the user has
+   */
+  achievements: number;
+  /**
    * The total numbers counted by the user
    */
   numbersCounted: number;
