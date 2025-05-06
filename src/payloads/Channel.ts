@@ -1,6 +1,6 @@
 import type { CountingMode } from '../rest/Channel.js';
 
-export interface CountingGoal {
+export interface CountingChannelGoal {
   /**
    * If the goal is active.
    */
@@ -23,7 +23,7 @@ export interface CountingGoal {
   role: string | null;
 }
 
-export interface CountingReactionEmojis {
+export interface CountingChannelReactionEmojis {
   /**
    * The emoji to use for correct counts.
    */
@@ -34,7 +34,7 @@ export interface CountingReactionEmojis {
   incorrect?: string | null;
 }
 
-export interface CountingReactions {
+export interface CountingChannelReactions {
   /**
    * If the reactions are enabled.
    */
@@ -42,10 +42,10 @@ export interface CountingReactions {
   /**
    * The emojis to use for the reactions.
    */
-  emojis?: CountingReactionEmojis;
+  emojis?: CountingChannelReactionEmojis;
 }
 
-export interface CountingConfig {
+export interface CountingChannelConfig {
   /**
    * If the channel is enabled.
    */
@@ -72,7 +72,7 @@ export interface CountingConfig {
   deleteIncorrect: boolean;
 }
 
-export interface CountingNotifications {
+export interface CountingChannelNotifications {
   /**
    * Enabled: Achievements are sent to the counting channel. DM user fallback.
    * Disabled: Achievements are sent to the user.
@@ -94,15 +94,15 @@ export interface APICountingChannel<IDType> {
   /**
    * The channel configuration.
    */
-  config: CountingConfig;
+  config: CountingChannelConfig;
   /**
    * The channel notification configuration.
    */
-  notifications: CountingNotifications;
+  notifications: CountingChannelNotifications;
   /**
    * The channel reactions configuration.
    */
-  reactions: CountingReactions;
+  reactions: CountingChannelReactions;
   /**
    * The channel ID.
    */
@@ -134,5 +134,5 @@ export interface APICountingChannel<IDType> {
   /**
    * The counting goal of the channel
    */
-  goal: CountingGoal | null;
+  goal: CountingChannelGoal | null;
 }

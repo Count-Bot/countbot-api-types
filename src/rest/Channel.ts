@@ -1,4 +1,4 @@
-import type { APICountingChannel, CountingConfig, CountingNotifications } from '../payloads/Channel.js';
+import type { APICountingChannel, CountingChannelConfig, CountingChannelNotifications } from '../payloads/Channel.js';
 import type { BaseAuthRouteOptions } from '../utils/base.js';
 
 export const CountingModes = [
@@ -37,8 +37,8 @@ export interface RESTPatchAPICountingChannel<T> extends BaseAuthRouteOptions<API
   };
   Body: {
     enabled?: boolean;
-    config?: Partial<CountingConfig>;
-    notifications?: CountingNotifications;
+    config?: Partial<CountingChannelConfig>;
+    notifications?: CountingChannelNotifications;
     channelId?: string;
     mode?: CountingMode;
   };
