@@ -51,14 +51,6 @@ export interface APICountingUser<IDType> {
    */
   votes: number;
   /**
-   * The number of items bought today
-   */
-  itemsBoughtToday: number;
-  /**
-   * The timestamp when the user reached the item limit
-   */
-  itemLimitReachedAt: number;
-  /**
    * The timestamp when the user used an item cooldown
    */
   itemUseCooldownEndAt: number;
