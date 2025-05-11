@@ -70,6 +70,10 @@ export interface CountingChannelConfig {
    * If incorrect counts are deleted.
    */
   deleteIncorrect: boolean;
+  /**
+   * The counting mode
+   */
+  mode: CountingMode;
 }
 
 export interface CountingChannelNotifications {
@@ -123,10 +127,6 @@ export interface APICountingChannel<IDType> {
    * The user ID of the last user that counted.
    */
   lastCountId: string | null;
-  /**
-   * The counting mode
-   */
-  mode: CountingMode;
   /**
    * The modifiers of the channel
    */
