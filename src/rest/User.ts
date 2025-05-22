@@ -13,12 +13,6 @@ export interface RESTGetAPICountingUser<T> extends BaseAuthRouteOptions<APICount
   };
 }
 
-export interface RESTPostAPICountingUser<T> extends BaseAuthRouteOptions<APICountingUser<T> | null> {
-  Body: {
-    userId: string;
-  };
-}
-
 export interface RESTGetAPICountingUserLeaderboard<T> extends BaseAuthRouteOptions<APICountingUser<T>[] | null> {
   Querystring: {
     page?: number;

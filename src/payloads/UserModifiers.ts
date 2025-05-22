@@ -1,14 +1,10 @@
 import type { Modifiers } from '../utils/modifiers.js';
 
-export interface APICountingUserModifiers<IDType> {
+export interface APICountingUserModifiers {
   /**
-   * The ObjectID of the user modifiers
+   * The User ID as identified by Discord
    */
-  _id: IDType;
-  /**
-   * The ID of the user these modifiers are for.
-   */
-  userId: string;
+  _id: string;
   /**
    * The freeze modifier
    */

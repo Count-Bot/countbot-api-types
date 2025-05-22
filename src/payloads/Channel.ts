@@ -90,7 +90,10 @@ export interface CountingChannelNotifications {
 }
 
 export interface APICountingChannel<IDType> {
-  _id: IDType;
+  /**
+   * The Channel ID as identified by Discord
+   */
+  _id: string;
   /**
    * If the channel is enabled.
    */
@@ -107,10 +110,6 @@ export interface APICountingChannel<IDType> {
    * The channel reactions configuration.
    */
   reactions: CountingChannelReactions;
-  /**
-   * The channel ID.
-   */
-  channelId: string;
   /**
    * The guild ID.
    */
