@@ -1,4 +1,4 @@
-import type { APICountingChannel } from '../payloads/Channel.js';
+import type { APICountingChannel, CountingChannelConfig, CountingChannelNotifications } from '../payloads/Channel.js';
 import type { BaseAuthRouteOptions } from '../utils/base.js';
 
 export const CountingModes = [
@@ -28,6 +28,26 @@ export interface RESTGetAPICountingChannels<T> extends BaseAuthRouteOptions<APIC
 export interface RESTGetAPICountingChannel<T> extends BaseAuthRouteOptions<APICountingChannel<T> | null> {
   Params: {
     channelId: string;
+  };
+}
+
+export interface RESTPatchAPICountingChannel<T> extends BaseAuthRouteOptions<APICountingChannel<T> | null> {
+  Params: {
+    channelId: string;
+  };
+  Body: {
+    enabled?: boolean;
+    config?: Partial<CountingChannelConfig>;
+    notifications?: CountingChannelNotifications;
+    channelId?: string;
+    mode?: CountingMode;
+  };
+}
+
+export interface RESTPostAPICountingChannel<T> extends BaseAuthRouteOptions<APICountingChannel<T> | null> {
+  Body: {
+    channelId: string;
+    guildId: string;
   };
 }
 

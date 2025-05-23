@@ -5,19 +5,23 @@ export enum GuildPremiumType {
   Plus = 1,
 }
 
-export interface APICountingGuild {
+export interface APICountingGuild<IDType> {
   /**
-   * The Channel ID as identified by Discord
+   * The ObjectID of the guild
    */
-  _id: string;
+  _id: IDType;
   /**
-   * An array of Counting Channel IDs
+   * The Discord Snowflake ID of the guild
+   */
+  guildId: string;
+  /**
+   * The counting channel of the guild
    */
   channels: string[];
   /**
    * The ISO-639-1 language code for the guild
    */
-  lng: LanguageCode;
+  language: LanguageCode;
   /**
    * The premium type of the guild
    */

@@ -1,10 +1,14 @@
 import type { Modifiers } from '../utils/modifiers.js';
 
-export interface APICountingChannelModifiers {
+export interface APICountingChannelModifiers<IDType> {
   /**
-   * The Channel ID as identified by Discord
+   * The ObjectID of the channel modifiers
    */
-  _id: string;
+  _id: IDType;
+  /**
+   * The ID of the channel these modifiers are for.
+   */
+  channelId: string;
   /**
    * The coin boost modifier
    */

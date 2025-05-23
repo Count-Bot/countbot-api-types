@@ -7,9 +7,13 @@ export enum UserPremiumType {
 
 export interface APICountingUser<IDType> {
   /**
-   * The User ID as identified by Discord
+   * The ObjectID of the user
    */
-  _id: string;
+  _id: IDType;
+  /**
+   * The Discord Snowflake ID of the user
+   */
+  userId: string;
   /**
    * The modifiers of the user
    */
