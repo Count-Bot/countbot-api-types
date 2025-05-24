@@ -120,6 +120,10 @@ export interface APICountingChannel<IDType> {
    */
   count: number;
   /**
+   * The channels score. (All time counts)
+   */
+  score: number;
+  /**
    * The channels score (all time counts).
    */
   items: number;
