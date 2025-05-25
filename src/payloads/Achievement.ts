@@ -1,4 +1,5 @@
 export type AchievementId =
+  | 'FIRST_COUNT'
   | 'COUNTER_AMATURE'
   | 'COUNTER_EXPERIENCED'
   | 'COUNTER_LEGENDARY'
