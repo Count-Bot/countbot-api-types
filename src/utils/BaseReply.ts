@@ -1,5 +1,5 @@
 export interface BaseReply<R = null, C = number> {
   error: boolean;
-  code?: C;
+  code?: string;
   data?: R;
 }
