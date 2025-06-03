@@ -1,4 +1,4 @@
-import type { Modifiers } from '../utils/modifiers.js';
+import type { Modifiers } from '../utils/BaseModifier.js';
 
 export interface APICountingChannelModifiers<IDType> {
   /**
