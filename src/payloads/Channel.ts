@@ -1,4 +1,19 @@
-import type { CountingMode } from '../rest/Channel.js';
+export const CountingModes = [
+  'DEFAULT',
+  'EVEN',
+  'ODD',
+  'THREE',
+  'FOUR',
+  'FIVE',
+  'SIX',
+  'SEVEN',
+  'EIGHT',
+  'NINE',
+  'TEN',
+  'PRIME',
+] as const;
+
+export type CountingMode = (typeof CountingModes)[number];
 
 export interface CountingChannelGoal {
   /**
@@ -73,7 +88,7 @@ export interface CountingChannelConfig {
   /**
    * The counting mode
    */
-  mode: CountingMode;
+  mode: string;
 }
 
 export interface CountingChannelNotifications {
