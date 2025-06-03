@@ -31,8 +31,3 @@ export interface RESTGetAPICountingChannel<T> extends BaseAuthRouteOptions<APICo
   };
 }
 
-export interface RESTGetAPICountingChannelLeaderboard<T> extends BaseAuthRouteOptions<APICountingChannel<T>[]> {
-  Querystring: {
-    page?: number;
-  };
-}

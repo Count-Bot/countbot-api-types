@@ -1,19 +1,26 @@
+import { APICountingChannel } from '../payloads/Channel.js';
 import type { APICountingGuild } from '../payloads/Guild.js';
 import type { BaseAuthRouteOptions, LanguageCode } from '../utils/index.js';
 
-export interface RESTGetAPIGuilds<T> extends BaseAuthRouteOptions<APICountingGuild<T> | null> {
+export interface RESTGetAPICountingGuilds<T> extends BaseAuthRouteOptions<APICountingGuild<T> | null> {
   Querystring: {
     guildId?: string;
   };
 }
 
-export interface RESTGetAPIGuild<T> extends BaseAuthRouteOptions<APICountingGuild<T> | null> {
+export interface RESTGetAPICountingGuild<T> extends BaseAuthRouteOptions<APICountingGuild<T> | null> {
   Params: {
     guildId: string;
   };
 }
 
-export interface RESTPatchAPIGuild<T> extends BaseAuthRouteOptions<APICountingGuild<T> | null> {
+export interface RESTGetAPICountingGuildChannels<T> extends BaseAuthRouteOptions<APICountingChannel<T>[] | null> {
+  Params: {
+    guildId: string;
+  };
+}
+
+export interface RESTPatchAPICountingGuild<T> extends BaseAuthRouteOptions<APICountingGuild<T> | null> {
   Params: {
     guildId: string;
   };
@@ -22,7 +29,7 @@ export interface RESTPatchAPIGuild<T> extends BaseAuthRouteOptions<APICountingGu
   };
 }
 
-export interface RESTPostAPIGuild<T> extends BaseAuthRouteOptions<APICountingGuild<T> | null> {
+export interface RESTPostAPICountingGuild<T> extends BaseAuthRouteOptions<APICountingGuild<T>> {
   Body: {
     guildId: string;
   };

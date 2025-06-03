@@ -73,7 +73,7 @@ export interface CountingChannelConfig {
   /**
    * The counting mode
    */
-  mode: CountingMode;
+  mode: string;
 }
 
 export interface CountingChannelNotifications {
