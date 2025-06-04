@@ -1,4 +1,4 @@
-export interface BaseReply<R = null, C = number> {
+export interface BaseReply<R = null> {
   error: boolean;
   code?: string;
   data?: R;
