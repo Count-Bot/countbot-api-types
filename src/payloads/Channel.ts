@@ -88,7 +88,7 @@ export interface CountingChannelConfig {
   /**
    * The counting mode
    */
-  mode: string;
+  mode: CountingMode;
 }
 
 export interface CountingChannelNotifications {
