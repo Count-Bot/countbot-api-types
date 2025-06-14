@@ -42,3 +42,39 @@ export interface ItemDropResult {
   xp?: number;
   item?: CBItemString;
 }
+
+export const ITEM_STRINGS: Record<CBItemType, CBItemTypeString> = {
+  [CBItemType.Skip]: 'Skip',
+  [CBItemType.Slowmode]: 'Slowmode',
+  [CBItemType.Luck]: 'Luck',
+  [CBItemType.CoinBooster]: 'CoinBooster',
+  [CBItemType.XPBooster]: 'XPBooster',
+  [CBItemType.Lightning]: 'Lightning',
+  [CBItemType.Freeze]: 'Freeze',
+  [CBItemType.LootCrate]: 'LootCrate',
+};
+
+export const RARITY_STRINGS: Record<CBItemRarity, CBItemRarityString> = {
+  [CBItemRarity.Common]: 'Common',
+  [CBItemRarity.Rare]: 'Rare',
+  [CBItemRarity.Epic]: 'Epic',
+  [CBItemRarity.Mythic]: 'Mythic',
+};
+
+/**
+ * Convert a rarity to a string
+ * @param {CBItemRarity} rarity The rarity type
+ * @returns {CBItemRarityString} The item rarity string
+ */
+export function rarityToString(rarity: CBItemRarity): CBItemRarityString {
+  return RARITY_STRINGS[rarity];
+}
+
+/**
+ * Convert a rarity to a string
+ * @param {CBItemType} type The item type
+ * @returns {CBItemTypeString} Item type string
+ */
+export function typeToString(type: CBItemType): CBItemTypeString {
+  return ITEM_STRINGS[type];
+}
