@@ -1,10 +1,5 @@
 import type { CBItemString } from '../utils/items.js';
 
-export enum UserPremiumType {
-  Default = 0,
-  Infinity = 1,
-}
-
 export interface APICountingUser<IDType> {
   /**
    * The ObjectID of the user
@@ -57,7 +52,7 @@ export interface APICountingUser<IDType> {
   /**
    * The lifetime status of the user
    */
-  premium: UserPremiumType;
+  premium: boolean;
   /**
    * Initialized when the user was created but will be updated at every count.
    */
