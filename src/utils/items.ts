@@ -78,3 +78,17 @@ export function rarityToString(rarity: CBItemRarity): CBItemRarityString {
 export function typeToString(type: CBItemType): CBItemTypeString {
   return ITEM_STRINGS[type];
 }
+
+export function itemStringToRarityAndType(itemStr: CBItemString): [rarity: CBItemRarity, type: CBItemType] {
+  const [rarityStr, typeStr] = itemStringToRarityAndTypeString(itemStr);
+
+  return [CBItemRarity[rarityStr], CBItemType[typeStr]];
+}
+
+export function itemStringToRarityAndTypeString(
+  itemStr: CBItemString,
+): [rarity: CBItemRarityString, type: CBItemTypeString] {
+  const [rarityStr, typeStr] = itemStr.split('_') as [CBItemRarityString, CBItemTypeString];
+
+  return [rarityStr, typeStr];
+}
