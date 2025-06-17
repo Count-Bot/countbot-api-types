@@ -1,16 +1,17 @@
-export type AchievementId =
-  | 'FIRST_COUNT'
-  | 'COUNTER_AMATURE'
-  | 'COUNTER_EXPERIENCED'
-  | 'COUNTER_LEGENDARY'
-  | 'ITEM_SCAVENGER'
-  | 'ITEM_SEEKER'
-  | 'ITEM_HUNTER'
-  | 'COUNTBOT_HERO'
-  | 'COUNTBOT_CHAMPION'
-  | 'COUNTBOT_VILLIAN'
-  | 'SELFLESS_COUNTER'
-  | 'BOT_KILLER';
+export enum AchievementId {
+  FirstCount = 'FIRST_COUNT',
+  CounterAmature = 'COUNTER_AMATURE',
+  CounterExperienced = 'COUNTER_EXPERIENCED',
+  CounterLegendary = 'COUNTER_LEGENDARY',
+  ItemScavenger = 'ITEM_SCAVENGER',
+  ItemSeeker = 'ITEM_SEEKER',
+  ItemHunter = 'ITEM_HUNTER',
+  CountBotHero = 'COUNTBOT_HERO',
+  CountBotChampion = 'COUNTBOT_CHAMPION',
+  CountBotVillain = 'COUNTBOT_VILLIAN',
+  SelflessCounter = 'SELFLESS_COUNTER',
+  BotKiller = 'BOT_KILLER',
+}
 
 export interface APIAchievement<IDType> {
   _id: IDType;
