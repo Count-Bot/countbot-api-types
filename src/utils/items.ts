@@ -28,6 +28,8 @@ export enum CBItemType {
 
 export type CBItemString = `${CBItemRarityString}_${CBItemTypeString}`;
 
+export type ShopItem = [CBItemString, number];
+
 export interface ItemDropResult {
   count: number;
   rarity: CBItemRarity;
