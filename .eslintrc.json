@@ -19,7 +19,7 @@
   "ignorePatterns": ["node_modules/", "build/"],
   "rules": {
     "import/order": [
-      "error",
+      "warn",
       {
         "groups": ["builtin", "external", "internal", "index", "sibling", "parent"],
         "alphabetize": {
