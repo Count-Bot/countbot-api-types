@@ -5,8 +5,12 @@ import { CountingMode } from '../payloads/index.js';
 
 export interface CountResult {
   count: number;
+  mode: CountingMode;
   valid: boolean;
-  achievements: AchievementReward[];
+  achievement: {
+    notfication: boolean;
+    achievements: AchievementReward[];
+  };
   delete?: boolean;
   reaction?: string | null;
   suddenDeath?: boolean;
