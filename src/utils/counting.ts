@@ -8,7 +8,7 @@ export interface CountResult {
   mode: CountingMode;
   valid: boolean;
   achievement: {
-    notfication: boolean;
+    notification: boolean;
     achievements: AchievementReward[];
   };
   delete?: boolean;
