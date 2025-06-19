@@ -1,4 +1,18 @@
-import { CountingMode } from '../payloads/Channel.js';
+import { AchievementReward } from './Achievement.js';
+import { ItemDrop } from './items.js';
+import { RewardMetadata } from './reward.js';
+import { CountingMode } from '../payloads/index.js';
+
+export interface CountResult {
+  count: number;
+  valid: boolean;
+  achievements: AchievementReward[];
+  delete?: boolean;
+  reaction?: string | null;
+  suddenDeath?: boolean;
+  itemDrop?: ItemDrop;
+  milestone?: RewardMetadata;
+}
 
 const multiples = {
   THREE: 3,

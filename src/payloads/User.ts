@@ -1,4 +1,4 @@
-import type { CBItemString } from '../utils/items.js';
+import { ItemString } from '../utils/items.js';
 
 export interface APICountingUser<IDType> {
   /**
@@ -36,7 +36,7 @@ export interface APICountingUser<IDType> {
   /**
    * The user's inventory
    */
-  inventory: CBItemString[];
+  inventory: ItemString[];
   /**
    * The timestamp when the user last voted
    */
