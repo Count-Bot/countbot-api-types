@@ -1,3 +1,5 @@
+import { AchievementReward } from './Achievement.js';
+
 export interface ItemDrop {
   item: ItemString;
   result: ItemExecuteResult;
@@ -14,6 +16,12 @@ export interface ItemExecuteResult {
   coins?: number;
   xp?: number;
   item?: ItemString;
+}
+
+export interface ItemUseResult {
+  inventory: ItemString[];
+  result: ItemExecuteResult;
+  achievement?: AchievementReward;
 }
 
 export type ItemRarityString = keyof typeof ItemRarity;
