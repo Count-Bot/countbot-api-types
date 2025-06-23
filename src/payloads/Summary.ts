@@ -5,6 +5,10 @@ export interface APICountingSummary<IDType> {
    */
   current: boolean;
   /**
+   * Number of Counting Channels created for the day
+   */
+  channels: number;
+  /**
    * Number of commands executed for the day
    */
   commands: number;
