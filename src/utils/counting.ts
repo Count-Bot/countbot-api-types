@@ -7,7 +7,7 @@ export interface CountResult {
   count: number;
   mode: CountingMode;
   valid: boolean;
-  achievement: {
+  achievement?: {
     notification: boolean;
     achievements: AchievementReward[];
   };
