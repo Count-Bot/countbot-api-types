@@ -18,10 +18,6 @@ export interface APICountingChannelModifiers<IDType> {
    */
   luck: Modifiers<number>;
   /**
-   * The slowmode modifier
-   */
-  slowmode: Modifiers<number>;
-  /**
    * The xp modifier
    */
   xp: Modifiers<number>;

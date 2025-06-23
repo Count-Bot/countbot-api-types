@@ -12,7 +12,6 @@ export interface ItemExecuteResult {
   duration?: number;
   boost?: number;
   luck?: number;
-  slowmode?: number;
   coins?: number;
   xp?: number;
   item?: ItemString;
@@ -44,20 +43,18 @@ export enum ItemRarity {
 
 export enum ItemType {
   Skip = 1024,
-  Slowmode = 2048,
-  Luck = 4096,
-  CoinBooster = 8192,
-  XPBooster = 16384,
-  Lightning = 32768,
-  Freeze = 65536,
-  LootCrate = 131072,
+  Luck = 2048,
+  CoinBooster = 4096,
+  XPBooster = 8192,
+  Lightning = 16384,
+  Freeze = 32768,
+  LootCrate = 65536,
 }
 
 export type ShopItem = [ItemString, number];
 
 export const ITEM_STRINGS: Record<ItemType, ItemTypeString> = {
   [ItemType.Skip]: 'Skip',
-  [ItemType.Slowmode]: 'Slowmode',
   [ItemType.Luck]: 'Luck',
   [ItemType.CoinBooster]: 'CoinBooster',
   [ItemType.XPBooster]: 'XPBooster',
