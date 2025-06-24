@@ -104,7 +104,7 @@ export interface CountingChannelNotifications {
   milestones: boolean;
 }
 
-export interface APICountingChannel<IDType> {
+export interface APICountingChannel<IDType = string> {
   _id: IDType;
   /**
    * If the channel is enabled.

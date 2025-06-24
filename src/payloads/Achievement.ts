@@ -13,7 +13,7 @@ export enum AchievementId {
   BotKiller = 'BOT_KILLER',
 }
 
-export interface APIAchievement<IDType> {
+export interface APIAchievement<IDType = string> {
   _id: IDType;
   userId: string;
   achievement: AchievementId;

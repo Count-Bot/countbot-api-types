@@ -1,6 +1,6 @@
 import type { LanguageCode } from '../utils/index.js';
 
-export interface APICountingGuild<IDType> {
+export interface APICountingGuild<IDType = string> {
   /**
    * The ObjectID of the guild
    */

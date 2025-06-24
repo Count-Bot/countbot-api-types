@@ -1,4 +1,4 @@
-export interface APICountingSummary<IDType> {
+export interface APICountingSummary<IDType = string> {
   _id: IDType;
   /**
    * If the summary is the current one

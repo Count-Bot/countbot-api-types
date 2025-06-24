@@ -1,6 +1,6 @@
 import { ItemString } from '../utils/items.js';
 
-export interface APICountingUser<IDType> {
+export interface APICountingUser<IDType = string> {
   /**
    * The ObjectID of the user
    */
