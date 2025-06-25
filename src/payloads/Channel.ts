@@ -15,6 +15,63 @@ export const CountingModes = [
 
 export type CountingMode = (typeof CountingModes)[number];
 
+export interface APICountingChannel<IDType = string> {
+  _id: IDType;
+  /**
+   * If the channel is enabled.
+   */
+  enabled: boolean;
+  /**
+   * The channel configuration.
+   */
+  config: CountingChannelConfig;
+  /**
+   * The channel notification configuration.
+   */
+  notifications: CountingChannelNotifications;
+  /**
+   * The channel reactions configuration.
+   */
+  reactions: CountingChannelReactions;
+  /**
+   * The channel ID.
+   */
+  channelId: string;
+  /**
+   * The guild ID.
+   */
+  guildId: string;
+  /**
+   * The channels current count.
+   */
+  count: number;
+  /**
+   * The channels score. (All time counts)
+   */
+  score: number;
+  /**
+   * The channels score (all time counts).
+   */
+  items: number;
+  /**
+   * The user ID of the last user that counted.
+   */
+  lastCountId: string | null;
+  /**
+   * The modifiers of the channel
+   */
+  modifiers: IDType;
+  /**
+   * The counting goal of the channel
+   */
+  goal: CountingChannelGoal | null;
+  /**
+   * Initialized when the channel was created but will be updated at every count.
+   */
+  lastCountAt: Date;
+}
+
+
 export interface CountingChannelGoal {
   /**
    * If the goal is active.
@@ -89,10 +146,6 @@ export interface CountingChannelConfig {
    * The counting mode
    */
   mode: CountingMode;
-  /**
-   * Initialized when the channel was created but will be updated at every count.
-   */
-  lastCountAt: Date;
 }
 
 export interface CountingChannelNotifications {
@@ -106,56 +159,4 @@ export interface CountingChannelNotifications {
    * Disabled: Milestones are not sent at all.
    */
   milestones: boolean;
-}
-
-export interface APICountingChannel<IDType = string> {
-  _id: IDType;
-  /**
-   * If the channel is enabled.
-   */
-  enabled: boolean;
-  /**
-   * The channel configuration.
-   */
-  config: CountingChannelConfig;
-  /**
-   * The channel notification configuration.
-   */
-  notifications: CountingChannelNotifications;
-  /**
-   * The channel reactions configuration.
-   */
-  reactions: CountingChannelReactions;
-  /**
-   * The channel ID.
-   */
-  channelId: string;
-  /**
-   * The guild ID.
-   */
-  guildId: string;
-  /**
-   * The channels current count.
-   */
-  count: number;
-  /**
-   * The channels score. (All time counts)
-   */
-  score: number;
-  /**
-   * The channels score (all time counts).
-   */
-  items: number;
-  /**
-   * The user ID of the last user that counted.
-   */
-  lastCountId: string | null;
-  /**
-   * The modifiers of the channel
-   */
-  modifiers: IDType;
-  /**
-   * The counting goal of the channel
-   */
-  goal: CountingChannelGoal | null;
 }
