@@ -71,7 +71,6 @@ export interface APICountingChannel<IDType = string> {
   lastCountAt: Date;
 }
 
-
 export interface CountingChannelGoal {
   /**
    * If the goal is active.
