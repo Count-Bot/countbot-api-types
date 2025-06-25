@@ -89,6 +89,10 @@ export interface CountingChannelConfig {
    * The counting mode
    */
   mode: CountingMode;
+  /**
+   * Initialized when the channel was created but will be updated at every count.
+   */
+  lastCountAt: Date;
 }
 
 export interface CountingChannelNotifications {
