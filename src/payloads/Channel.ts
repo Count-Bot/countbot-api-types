@@ -58,10 +58,6 @@ export interface APICountingChannel<IDType = string> {
    */
   lastCountId: string | null;
   /**
-   * The modifiers of the channel
-   */
-  modifiers: IDType;
-  /**
    * The counting goal of the channel
    */
   goal: CountingChannelGoal | null;

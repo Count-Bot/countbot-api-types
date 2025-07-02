@@ -10,10 +10,6 @@ export interface APICountingUser<IDType = string> {
    */
   userId: string;
   /**
-   * The modifiers of the user
-   */
-  modifiers: IDType;
-  /**
    * The amount of coins the user has
    */
   coins: number;
