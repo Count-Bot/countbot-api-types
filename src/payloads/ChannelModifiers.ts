@@ -10,15 +10,15 @@ export interface APICountingChannelModifiers<IDType = string> {
    */
   channelId: string;
   /**
-   * The coin boost modifier
+   * The Coin Boost modifier
    */
   coin: Modifiers<number>;
   /**
-   * The luck modifier
+   * The Luck modifier
    */
   luck: Modifiers<number>;
   /**
-   * The xp modifier
+   * The XP Boost modifier
    */
   xp: Modifiers<number>;
 }

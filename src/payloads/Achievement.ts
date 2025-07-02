@@ -15,7 +15,16 @@ export enum AchievementId {
 
 export interface APIAchievement<IDType = string> {
   _id: IDType;
+  /**
+   * The Discord Snowflake ID of the user who earned the achievement.
+   */
   userId: string;
+  /**
+   * The ID of the achievement that was earned.
+   */
   achievement: AchievementId;
+  /**
+   * The date when the achievement was awarded.
+   */
   awardedAt: Date;
 }
