@@ -6,11 +6,11 @@ export interface APICountingGuild<IDType = string> {
    */
   _id: IDType;
   /**
-   * The Discord Snowflake ID of the guild
+   * The Discord Snowflake of the guild
    */
   guildId: string;
   /**
-   * The counting channel of the guild
+   * The Counting Channels for the guild
    */
   channels: string[];
   /**
@@ -18,11 +18,7 @@ export interface APICountingGuild<IDType = string> {
    */
   language: LanguageCode;
   /**
-   * The premium type of the guild
+   * Whether the guild is premium or not
    */
   premium: boolean;
-  /**
-   * Initialized when the guild was created but will be updated at every count.
-   */
-  lastCountAt: Date;
 }
