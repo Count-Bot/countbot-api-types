@@ -5,13 +5,13 @@ export interface APICountingSummary<IDType = string> {
    */
   current: boolean;
   /**
+   * Number of achievements users earned for the day
+   */
+  achievements: number;
+  /**
    * Number of Counting Channels created for the day
    */
   channels: number;
-  /**
-   * Number of commands executed for the day
-   */
-  commands: number;
   /**
    * Number of counts for the day
    */
@@ -20,6 +20,14 @@ export interface APICountingSummary<IDType = string> {
    * Number of new guilds for the day
    */
   guilds: number;
+  /**
+   * Number of items bought for the day
+   */
+  itemsBought: number;
+  /**
+   * Number of items used for the day
+   */
+  itemsUsed: number;
   /**
    * Number of new users for the day
    */
