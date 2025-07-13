@@ -1,6 +1,6 @@
 export enum AchievementId {
   FirstCount = 'FIRST_COUNT',
-  CounterAmature = 'COUNTER_AMATEUR',
+  CounterAmateur = 'COUNTER_AMATEUR',
   CounterExperienced = 'COUNTER_EXPERIENCED',
   CounterLegendary = 'COUNTER_LEGENDARY',
   ItemScavenger = 'ITEM_SCAVENGER',
