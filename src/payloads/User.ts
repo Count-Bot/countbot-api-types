@@ -30,6 +30,10 @@ export interface APICountingUser<IDType = string> {
    */
   itemsFound: number;
   /**
+   * The total items used by the user
+   */
+  itemsUsed: number;
+  /**
    * The user's inventory
    */
   inventory: ItemString[];
