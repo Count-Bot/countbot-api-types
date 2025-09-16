@@ -16,8 +16,8 @@ export enum AchievementId {
   BotKiller = 'BOT_KILLER',
 }
 
-export interface APIAchievement<IDType = string> {
-  _id: IDType;
+export interface APIAchievement {
+  id: string;
   /**
    * The Discord Snowflake ID of the user who earned the achievement.
    */

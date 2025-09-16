@@ -1,10 +1,6 @@
 import type { LanguageCode } from '../utils/index.js';
 
-export interface APICountingGuild<IDType = string> {
-  /**
-   * The ObjectID of the guild
-   */
-  _id: IDType;
+export interface APICountingGuild {
   /**
    * The Discord Snowflake of the guild
    */

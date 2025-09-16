@@ -1,10 +1,10 @@
 import type { Modifiers } from '../utils/BaseModifier.js';
 
-export interface APICountingChannelModifiers<IDType = string> {
+export interface APICountingChannelModifiers {
   /**
    * The ObjectID of the channel modifiers
    */
-  _id: IDType;
+  id: string;
   /**
    * The ID of the channel these modifiers are for.
    */

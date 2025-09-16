@@ -1,14 +1,10 @@
 import { ItemString } from '../utils/items.js';
 
-export interface APICountingUser<IDType = string> {
-  /**
-   * The ObjectID of the user
-   */
-  _id: IDType;
+export interface APICountingUser {
   /**
    * The Discord Snowflake ID of the user
    */
-  userId: string;
+  id: string;
   /**
    * The amount of coins the user has
    */

@@ -15,8 +15,8 @@ export const CountingModes = [
 
 export type CountingMode = (typeof CountingModes)[number];
 
-export interface APICountingChannel<IDType = string> {
-  _id: IDType;
+export interface APICountingChannel {
+  id: string;
   /**
    * If the channel is enabled.
    */

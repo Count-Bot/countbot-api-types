@@ -1,10 +1,10 @@
 import type { Modifiers } from '../utils/BaseModifier.js';
 
-export interface APICountingUserModifiers<IDType = string> {
+export interface APICountingUserModifiers {
   /**
-   * The ObjectID of the user modifiers
+   * The id of the user modifiers
    */
-  _id: IDType;
+  id: string;
   /**
    * The ID of the user these modifiers are for.
    */
