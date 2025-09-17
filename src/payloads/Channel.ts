@@ -64,7 +64,7 @@ export interface APICountingChannel {
   /**
    * Initialized when the channel was created but will be updated at every count.
    */
-  lastCountAt: Date;
+  lastCountAt: string;
 }
 
 export interface CountingChannelGoal {

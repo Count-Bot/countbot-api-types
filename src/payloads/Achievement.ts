@@ -29,5 +29,5 @@ export interface APIAchievement {
   /**
    * The date when the achievement was awarded.
    */
-  awardedAt: Date;
+  awardedAt: string;
 }

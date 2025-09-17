@@ -52,5 +52,5 @@ export interface APICountingUser {
   /**
    * Initialized when the user was created but will be updated at every count.
    */
-  lastCountAt: Date;
+  lastCountAt: string;
 }
